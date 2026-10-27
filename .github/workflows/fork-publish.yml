@@ -1,0 +1,105 @@
+name: Sync and Publish Fork
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 6 * * *'
+  push:
+    branches: [master]
+    paths:
+      - 'plugins/**'
+      - 'public/**'
+      - 'scripts/**'
+      - 'src/libs/**'
+      - 'src/types/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'tsconfig.production.json'
+      - '.github/workflows/fork-publish.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fork-sync-and-publish
+  cancel-in-progress: false
+
+jobs:
+  sync-and-publish:
+    if: github.repository == 'alirafiqmalik/lnreader-plugins'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout fork master
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - name: Merge upstream without discarding fork changes
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch https://github.com/lnreader/lnreader-plugins.git refs/heads/master
+          upstream_sha=$(git rev-parse FETCH_HEAD)
+          if ! git merge --no-edit "$upstream_sha"; then
+            git merge --abort
+            echo '::error::Upstream conflicts with fork changes. Resolve the merge on master, then rerun this workflow.'
+            echo 'Upstream sync stopped because of a merge conflict. Fork source and published plugins were preserved.' >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          # Bot pushes do not trigger another workflow; publish in this job.
+          git push origin HEAD:refs/heads/master
+          echo "Source commit: $(git rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Install build dependencies
+        run: npm ci --omit=dev --ignore-scripts
+
+      - name: Build plugins with fork URLs
+        shell: bash
+        run: |
+          publish_branch="plugins/v$(node -p "require('./package.json').version")"
+          echo "PUBLISH_BRANCH=$publish_branch" >> "$GITHUB_ENV"
+          BRANCH="$publish_branch" npm run build:full
+          mkdir -p .js/src
+          cp -r .js/plugins .js/src/plugins
+
+      - name: Validate manifest and downloadable files
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const plugins = JSON.parse(fs.readFileSync('.dist/plugins.min.json', 'utf8'));
+          if (!Array.isArray(plugins) || plugins.length === 0) throw new Error('Empty plugin manifest');
+          const prefix = `https://raw.githubusercontent.com/${process.env.GITHUB_REPOSITORY}/${process.env.PUBLISH_BRANCH}/`;
+          const ids = new Set();
+          for (const plugin of plugins) {
+            if (ids.has(plugin.id)) throw new Error(`Duplicate plugin: ${plugin.id}`);
+            ids.add(plugin.id);
+            for (const field of ['url', 'iconUrl', 'customJS', 'customCSS']) {
+              const url = plugin[field];
+              if (!url && (field === 'customJS' || field === 'customCSS')) continue;
+              if (!url?.startsWith(prefix)) throw new Error(`Unexpected ${field} for ${plugin.id}: ${url}`);
+              if (!fs.existsSync(url.slice(prefix.length))) throw new Error(`Missing file: ${url}`);
+            }
+          }
+          console.log(`Validated ${plugins.length} plugins and their assets.`);
+          NODE
+
+      - name: Publish app repository
+        shell: bash
+        run: |
+          git checkout --orphan "$PUBLISH_BRANCH"
+          git reset
+          git add -f public/static .dist .js/src/plugins total.svg
+          git commit -m 'chore(plugins): publish fork plugins'
+          # Only the generated branch is replaced; master retains its history.
+          git push --force origin "HEAD:refs/heads/$PUBLISH_BRANCH"
+          echo "App repository: https://raw.githubusercontent.com/$GITHUB_REPOSITORY/$PUBLISH_BRANCH/.dist/plugins.min.json" >> "$GITHUB_STEP_SUMMARY"
