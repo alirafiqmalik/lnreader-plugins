@@ -1,0 +1,3 @@
+# Fork-only list of request branches that the fork publishes on top of master.
+# One branch per line. Edit with .github/fork/branch.sh activate|retire.
+# The publish workflow retires a branch after upstream merges its PR.
