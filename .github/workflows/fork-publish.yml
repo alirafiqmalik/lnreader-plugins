@@ -16,6 +16,7 @@ on:
       - 'package-lock.json'
       - 'tsconfig.production.json'
       - '.github/workflows/fork-publish.yml'
+      - '.github/fork/**'
 
 permissions:
   contents: write
@@ -50,9 +51,50 @@ jobs:
             echo 'Upstream sync stopped because of a merge conflict. Fork source and published plugins were preserved.' >> "$GITHUB_STEP_SUMMARY"
             exit 1
           fi
-          # The merge message skips an extra run; this job publishes the source.
+
+      - name: Retire branches merged upstream
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          list=.github/fork/active-branches
+          owner=${GITHUB_REPOSITORY%%/*}
+          for branch in $(sed 's/#.*//; s/[[:space:]]//g; /^$/d' "$list"); do
+            # Upstream squash-merges PRs, so ask GitHub instead of git ancestry.
+            pr=$(gh api "repos/lnreader/lnreader-plugins/pulls?head=$owner:$branch&state=all" \
+              --jq '((map(select(.merged_at)) | .[0]) // .[0]) // empty | "\(.number) \(.state) \(.merged_at // "")"')
+            read -r number state merged_at <<< "$pr" || true
+            if [ -n "$merged_at" ]; then
+              sed -i "\#^$branch\$#d" "$list"
+              git commit -q -m "chore(fork): retire $branch [skip ci]" -- "$list"
+              echo "Retired \`$branch\`: upstream merged #$number." >> "$GITHUB_STEP_SUMMARY"
+            elif [ "$state" = closed ]; then
+              echo "::warning::$branch: upstream closed #$number without a merge. It stays published until you retire it or reopen the PR."
+            fi
+          done
+          # Skip-ci messages stop an extra run; this job publishes the source.
           git push origin HEAD:refs/heads/master
           echo "Source commit: $(git rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Merge active branches for this build only
+        shell: bash
+        run: |
+          git switch -q -c fork-publish-build
+          echo '### Published branches' >> "$GITHUB_STEP_SUMMARY"
+          echo "- \`master\` @ $(git rev-parse --short HEAD)" >> "$GITHUB_STEP_SUMMARY"
+          for branch in $(sed 's/#.*//; s/[[:space:]]//g; /^$/d' .github/fork/active-branches); do
+            if ! git fetch -q origin "refs/heads/$branch"; then
+              echo "::warning::$branch is active but missing on origin. It was not published."
+              continue
+            fi
+            if ! git merge -q --no-ff -m "build: include $branch" FETCH_HEAD; then
+              git merge --abort
+              echo "::error::$branch conflicts with master. Rebase it on upstream/master, then rerun this workflow."
+              echo "Publish stopped: \`$branch\` conflicts. The last published plugins were preserved." >> "$GITHUB_STEP_SUMMARY"
+              exit 1
+            fi
+            echo "- \`$branch\` @ $(git rev-parse --short FETCH_HEAD)" >> "$GITHUB_STEP_SUMMARY"
+          done
 
       - name: Setup Node.js
         uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
@@ -68,6 +110,9 @@ jobs:
         run: |
           publish_branch="plugins/v$(node -p "require('./package.json').version")"
           echo "PUBLISH_BRANCH=$publish_branch" >> "$GITHUB_ENV"
+          if ! git ls-remote --exit-code --heads origin "$publish_branch" > /dev/null; then
+            echo "::warning::New publish branch $publish_branch. Change the repository URL in the app to https://raw.githubusercontent.com/$GITHUB_REPOSITORY/$publish_branch/.dist/plugins.min.json"
+          fi
           BRANCH="$publish_branch" npm run build:full
           mkdir -p .js/src
           cp -r .js/plugins .js/src/plugins
