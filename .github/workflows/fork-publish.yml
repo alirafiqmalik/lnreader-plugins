@@ -35,6 +35,7 @@ jobs:
         with:
           ref: master
           fetch-depth: 0
+          ssh-key: ${{ secrets.FORK_SYNC_SSH_KEY }}
 
       - name: Merge upstream without discarding fork changes
         shell: bash
@@ -43,13 +44,13 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git fetch https://github.com/lnreader/lnreader-plugins.git refs/heads/master
           upstream_sha=$(git rev-parse FETCH_HEAD)
-          if ! git merge --no-edit "$upstream_sha"; then
+          if ! git merge --no-ff -m 'chore(sync): merge upstream master [skip ci]' "$upstream_sha"; then
             git merge --abort
             echo '::error::Upstream conflicts with fork changes. Resolve the merge on master, then rerun this workflow.'
             echo 'Upstream sync stopped because of a merge conflict. Fork source and published plugins were preserved.' >> "$GITHUB_STEP_SUMMARY"
             exit 1
           fi
-          # Bot pushes do not trigger another workflow; publish in this job.
+          # The merge message skips an extra run; this job publishes the source.
           git push origin HEAD:refs/heads/master
           echo "Source commit: $(git rev-parse HEAD)" >> "$GITHUB_STEP_SUMMARY"
 
