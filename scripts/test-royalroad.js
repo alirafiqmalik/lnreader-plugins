@@ -22,9 +22,10 @@ const code = ts.transpileModule(source + '\nexport { nonceSearch };', {
 }).outputText;
 const botError = /bot check could not be passed/;
 const url = 'https://www.royalroad.com/fiction/1';
-const response = (body, status = 200) => ({
+const response = (body, status = 200, headers = {}) => ({
   ok: status >= 200 && status < 300,
   status,
+  headers: new Headers(headers),
   text: async () => body,
 });
 const challenge = (difficulty = 0, algorithm = 'fast') =>

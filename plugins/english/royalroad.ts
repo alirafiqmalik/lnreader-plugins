@@ -1022,11 +1022,17 @@ async function fetchPageHtml(
   passingChallenge = false,
 ): Promise<string> {
   const response = await fetchApi(url);
-  if (!response.ok) {
-    throw new Error(
-      passingChallenge
-        ? BOT_CHECK_ERROR
-        : `Royal Road request failed (HTTP ${response.status}). Try again later.`,
+  const cloudflareChallenge =
+    response.headers.get('cf-mitigated') === 'challenge';
+
+  if (cloudflareChallenge || !response.ok) {
+    throw Object.assign(
+      new Error(
+        cloudflareChallenge || passingChallenge
+          ? BOT_CHECK_ERROR
+          : `Royal Road request failed (HTTP ${response.status}). Try again later.`,
+      ),
+      { response },
     );
   }
   return response.text();
