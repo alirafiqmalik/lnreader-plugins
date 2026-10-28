@@ -9,7 +9,7 @@ import { storage } from '@libs/storage';
 class RoyalRoad implements Plugin.PluginBase {
   id = 'royalroad';
   name = 'Royal Road';
-  version = '2.3.3';
+  version = '2.3.4';
   icon = 'src/en/royalroad/icon.png';
   site = 'https://www.royalroad.com/';
 
@@ -29,14 +29,14 @@ class RoyalRoad implements Plugin.PluginBase {
   async fetchHtml(url: string): Promise<string> {
     // Let a check that is in progress finish, so this request uses its cookie.
     if (anubisCheck) await anubisCheck.catch(() => '');
-    const html = await fetchApi(url).then(r => r.text());
+    const html = await fetchPageHtml(url);
     const challenge = readAnubisChallenge(html);
     if (!challenge) return html;
 
     let page: string;
     if (anubisCheck) {
       await anubisCheck;
-      page = await fetchApi(url).then(r => r.text());
+      page = await fetchPageHtml(url);
     } else {
       anubisCheck = passAnubisChallenge(html, challenge, url);
       try {
@@ -1017,6 +1017,21 @@ const MAX_ANUBIS_DIFFICULTY = 4;
 
 let anubisCheck: Promise<string> | undefined;
 
+async function fetchPageHtml(
+  url: string,
+  passingChallenge = false,
+): Promise<string> {
+  const response = await fetchApi(url);
+  if (!response.ok) {
+    throw new Error(
+      passingChallenge
+        ? BOT_CHECK_ERROR
+        : `Royal Road request failed (HTTP ${response.status}). Try again later.`,
+    );
+  }
+  return response.text();
+}
+
 function readAnubisChallenge(html: string): AnubisChallenge | undefined {
   const json = readJsonScript(html, 'anubis_challenge');
   return json ? JSON.parse(json) : undefined;
@@ -1040,6 +1055,9 @@ async function passAnubisChallenge(
 ): Promise<string> {
   if (
     (rules.algorithm !== 'fast' && rules.algorithm !== 'slow') ||
+    typeof rules.difficulty !== 'number' ||
+    rules.difficulty < 0 ||
+    rules.difficulty % 1 !== 0 ||
     rules.difficulty > MAX_ANUBIS_DIFFICULTY
   ) {
     throw new Error(BOT_CHECK_ERROR);
@@ -1060,9 +1078,10 @@ async function passAnubisChallenge(
     elapsedTime: String(Date.now() - start),
   });
   const origin = url.match(/^https?:\/\/[^/]+/)?.[0];
-  return fetchApi(
+  return fetchPageHtml(
     `${origin}${basePrefix}/.within.website/x/cmd/anubis/api/pass-challenge?${params.toString()}`,
-  ).then(r => r.text());
+    true,
+  );
 }
 
 // Find the nonce for which sha256(data + nonce), in hex, starts with
