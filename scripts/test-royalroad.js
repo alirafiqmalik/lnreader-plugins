@@ -263,3 +263,71 @@ test('successful pages bypass the solver and reach the chapter parser', async ()
   assert.match(await plugin.parseChapter('fiction/1'), /Offline chapter\./);
   assert.equal(calls, 1);
 });
+
+for (const status of [200, 403]) {
+  for (const stage of ['initial', 'submission', 'retry']) {
+    test(`Cloudflare HTTP ${status} during ${stage} rejects with response metadata`, async () => {
+      const started = deferred();
+      const finish = deferred();
+      let passed = false;
+      let submissions = 0;
+      const blocked = response('<h1>Just a moment...</h1>', status, {
+        'cf-mitigated': 'challenge',
+      });
+
+      const { plugin } = loadPlugin(async request => {
+        if (request.includes('/pass-challenge?')) {
+          submissions++;
+          started.resolve();
+          await finish.promise;
+          passed = true;
+          return stage === 'submission' ? blocked : response('content');
+        }
+        if (stage === 'initial' || passed) return blocked;
+        return response(challenge());
+      });
+
+      const results = Promise.allSettled([
+        plugin.fetchHtml(url),
+        plugin.fetchHtml(url + '/chapter/2'),
+      ]);
+
+      if (stage !== 'initial') {
+        await started.promise;
+        finish.resolve();
+      }
+
+      const settled = await results;
+      if (stage === 'retry') {
+        assert.equal(settled[0].status, 'fulfilled');
+        assert.equal(settled[0].value, 'content');
+      }
+
+      const rejected = stage === 'retry' ? settled.slice(1) : settled;
+      for (const result of rejected) {
+        assert.equal(result.status, 'rejected');
+        assert.match(result.reason.message, botError);
+        assert.equal(result.reason.response, blocked);
+        assert.equal(result.reason.response.status, status);
+        assert.equal(
+          result.reason.response.headers.get('cf-mitigated'),
+          'challenge',
+        );
+      }
+      assert.equal(submissions, stage === 'initial' ? 0 : 1);
+    });
+  }
+}
+
+for (const status of [403, 503, 500]) {
+  test(`ordinary HTTP ${status} preserves its status and message`, async () => {
+    const failed = response('<h1>Request failed</h1>', status);
+    const { plugin } = loadPlugin(async () => failed);
+
+    await assert.rejects(plugin.fetchHtml(url), error => {
+      assert.match(error.message, new RegExp(`HTTP ${status}`));
+      assert.equal(error.response, failed);
+      return true;
+    });
+  });
+}
