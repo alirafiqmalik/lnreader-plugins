@@ -45,6 +45,7 @@ branch=${2:-}
 case "$cmd" in
   new)
     need_branch "$branch"
+    [ -z "$(git status --porcelain)" ] || die 'commit or stash changes before creating a request branch'
     git fetch -q upstream master
     git switch -c "$branch" upstream/master
     ;;

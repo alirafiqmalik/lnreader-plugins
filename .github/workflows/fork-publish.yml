@@ -38,13 +38,16 @@ jobs:
           fetch-depth: 0
           ssh-key: ${{ secrets.FORK_SYNC_SSH_KEY }}
 
+      - name: Test publishing safeguards
+        run: python3 .github/fork/test_publish.py
+
       - name: Merge upstream without discarding fork changes
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git fetch https://github.com/lnreader/lnreader-plugins.git refs/heads/master
-          upstream_sha=$(git rev-parse FETCH_HEAD)
+          git fetch https://github.com/lnreader/lnreader-plugins.git refs/heads/master:refs/remotes/upstream/master
+          upstream_sha=$(git rev-parse refs/remotes/upstream/master)
           if ! git merge --no-ff -m 'chore(sync): merge upstream master [skip ci]' "$upstream_sha"; then
             git merge --abort
             echo '::error::Upstream conflicts with fork changes. Resolve the merge on master, then rerun this workflow.'
@@ -60,17 +63,26 @@ jobs:
           list=.github/fork/active-branches
           owner=${GITHUB_REPOSITORY%%/*}
           for branch in $(sed 's/#.*//; s/[[:space:]]//g; /^$/d' "$list"); do
-            # Upstream squash-merges PRs, so ask GitHub instead of git ancestry.
-            pr=$(gh api "repos/lnreader/lnreader-plugins/pulls?head=$owner:$branch&state=all" \
-              --jq '((map(select(.merged_at)) | .[0]) // .[0]) // empty | "\(.number) \(.state) \(.merged_at // "")"')
-            read -r number state merged_at <<< "$pr" || true
-            if [ -n "$merged_at" ]; then
-              sed -i "\#^$branch\$#d" "$list"
-              git commit -q -m "chore(fork): retire $branch [skip ci]" -- "$list"
-              echo "Retired \`$branch\`: upstream merged #$number." >> "$GITHUB_STEP_SUMMARY"
-            elif [ "$state" = closed ]; then
-              echo "::warning::$branch: upstream closed #$number without a merge. It stays published until you retire it or reopen the PR."
+            # Pin every input before checking PRs or publishing any source changes.
+            if ! git fetch -q origin "+refs/heads/$branch:refs/fork-inputs/$branch"; then
+              echo "::error::$branch is active but unavailable. The last published plugins were preserved."
+              exit 1
             fi
+            head=$(git rev-parse "refs/fork-inputs/$branch")
+            prs=$(gh api "repos/lnreader/lnreader-plugins/pulls?head=$owner:$branch&state=all&per_page=100" \
+              --paginate --jq '.[] | [.number, .state, (.merged_at // "-"), .head.sha, (.merge_commit_sha // "-")] | @tsv')
+            while IFS=$'\t' read -r number state merged_at pr_head merge_sha; do
+              [ "$pr_head" = "$head" ] || continue
+              if [ "$merged_at" != - ] && [ "$merge_sha" != - ] &&
+                git merge-base --is-ancestor "$merge_sha" refs/remotes/upstream/master; then
+                sed -i "\#^$branch\$#d" "$list"
+                git commit -q -m "chore(fork): retire $branch [skip ci]" -- "$list"
+                echo "Retired \`$branch\`: upstream merged #$number at the published head." >> "$GITHUB_STEP_SUMMARY"
+                break
+              elif [ "$state" = closed ] && [ "$merged_at" = - ]; then
+                echo "::warning::$branch: upstream closed #$number without a merge. It stays published until you retire it or reopen the PR."
+              fi
+            done <<< "$prs"
           done
           # Skip-ci messages stop an extra run; this job publishes the source.
           git push origin HEAD:refs/heads/master
@@ -83,17 +95,14 @@ jobs:
           echo '### Published branches' >> "$GITHUB_STEP_SUMMARY"
           echo "- \`master\` @ $(git rev-parse --short HEAD)" >> "$GITHUB_STEP_SUMMARY"
           for branch in $(sed 's/#.*//; s/[[:space:]]//g; /^$/d' .github/fork/active-branches); do
-            if ! git fetch -q origin "refs/heads/$branch"; then
-              echo "::warning::$branch is active but missing on origin. It was not published."
-              continue
-            fi
-            if ! git merge -q --no-ff -m "build: include $branch" FETCH_HEAD; then
+            head=$(git rev-parse --verify "refs/fork-inputs/$branch")
+            if ! git merge -q --no-ff -m "build: include $branch" "$head"; then
               git merge --abort
               echo "::error::$branch conflicts with master. Rebase it on upstream/master, then rerun this workflow."
               echo "Publish stopped: \`$branch\` conflicts. The last published plugins were preserved." >> "$GITHUB_STEP_SUMMARY"
               exit 1
             fi
-            echo "- \`$branch\` @ $(git rev-parse --short FETCH_HEAD)" >> "$GITHUB_STEP_SUMMARY"
+            echo "- \`$branch\` @ $(git rev-parse --short "$head")" >> "$GITHUB_STEP_SUMMARY"
           done
 
       - name: Setup Node.js
@@ -110,7 +119,11 @@ jobs:
         run: |
           publish_branch="plugins/v$(node -p "require('./package.json').version")"
           echo "PUBLISH_BRANCH=$publish_branch" >> "$GITHUB_ENV"
-          if ! git ls-remote --exit-code --heads origin "$publish_branch" > /dev/null; then
+          # A failed remote read stops the build; an empty result means a new ref.
+          previous=$(git ls-remote --heads origin "refs/heads/$publish_branch")
+          previous_sha=${previous%%$'\t'*}
+          echo "PUBLISH_PREVIOUS_SHA=$previous_sha" >> "$GITHUB_ENV"
+          if [ -z "$previous_sha" ]; then
             echo "::warning::New publish branch $publish_branch. Change the repository URL in the app to https://raw.githubusercontent.com/$GITHUB_REPOSITORY/$publish_branch/.dist/plugins.min.json"
           fi
           BRANCH="$publish_branch" npm run build:full
@@ -147,5 +160,6 @@ jobs:
           git add -f public/static .dist .js/src/plugins total.svg
           git commit -m 'chore(plugins): publish fork plugins'
           # Only the generated branch is replaced; master retains its history.
-          git push --force origin "HEAD:refs/heads/$PUBLISH_BRANCH"
+          git push --force-with-lease="refs/heads/$PUBLISH_BRANCH:$PUBLISH_PREVIOUS_SHA" \
+            origin "HEAD:refs/heads/$PUBLISH_BRANCH"
           echo "App repository: https://raw.githubusercontent.com/$GITHUB_REPOSITORY/$PUBLISH_BRANCH/.dist/plugins.min.json" >> "$GITHUB_STEP_SUMMARY"
