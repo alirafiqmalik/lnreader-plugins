@@ -4,6 +4,13 @@ import languages from './languages.js';
 import { execSync } from 'child_process';
 import { minify } from './terser.js';
 
+const MULTISRC_GENERATORS = new Set(
+  fs
+    .readdirSync('./plugins/multisrc', { withFileTypes: true })
+    .filter(entry => entry.isDirectory())
+    .map(entry => entry.name),
+);
+
 const REMOTE = execSync('git remote get-url origin')
   .toString()
   .replace(/[\s\n]/g, '');
@@ -117,7 +124,10 @@ for (let language in languages) {
     )(_require, {});
     const { id, name, site, version, icon, customJS, customCSS, filters } =
       instance;
-    const normalisedName = name.replace(/\[.*\]/, '');
+    // Drop a multisrc "[generator]" suffix only; keep other brackets ("patreon[dev]").
+    const normalisedName = name.replace(/\[([^\]]*)\]/g, (match, inner) =>
+      MULTISRC_GENERATORS.has(inner) ? '' : match,
+    );
 
     // --only-new logic
     if (
