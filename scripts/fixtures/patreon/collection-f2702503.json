@@ -1,0 +1,30 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://www.patreon.com/api/collection?filter%5Bcampaign_id%5D=5517324&filter%5Bmust_contain_at_least_one_published_post%5D=true&sort=-edited_at&fields%5Bcollection%5D=title,description,num_posts,post_ids,thumbnail,url,current_user_num_locked_posts&json-api-version=1.0&json-api-use-default-includes=false&json-api-use-default-fields=false"
+  },
+  "response": {
+    "body": {
+      "data": [],
+      "meta": {
+        "pagination": {
+          "cursors": {
+            "next": null
+          },
+          "total": 0
+        }
+      }
+    },
+    "headers": {
+      "content-type": "application/vnd.api+json"
+    },
+    "status": 200
+  },
+  "routeKey": {
+    "params": {
+      "filter[campaign_id]": "5517324",
+      "sort": "-edited_at"
+    },
+    "path": "/api/collection"
+  }
+}

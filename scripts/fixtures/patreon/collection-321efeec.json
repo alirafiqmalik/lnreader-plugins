@@ -1,0 +1,64 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://www.patreon.com/api/collection?filter%5Bcampaign_id%5D=8825319&filter%5Bmust_contain_at_least_one_published_post%5D=true&sort=-edited_at&fields%5Bcollection%5D=title,description,num_posts,post_ids,thumbnail,url,current_user_num_locked_posts&json-api-version=1.0&json-api-use-default-includes=false&json-api-use-default-fields=false"
+  },
+  "response": {
+    "body": {
+      "data": [
+        {
+          "attributes": {
+            "current_user_num_locked_posts": 6,
+            "description": "",
+            "num_posts": 6,
+            "post_ids": [
+              920759021,
+              610000865,
+              193904131,
+              991007639,
+              924622092,
+              816732499
+            ],
+            "thumbnail": {
+              "default": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8825319/174931a6b48627feedcbe99f205d93ac/weJ0Xzp3GsP1/11.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8825319/174931a6b48627feedcbe99f205d93ac/weJ0Xzp3GsP1/11.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8825319/174931a6b48627feedcbe99f205d93ac/hyK1RsksHiD8/11.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8825319/174931a6b48627feedcbe99f205d93ac/tiF6DqwgNHmryX%8J%8I/11.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8825319/174931a6b48627feedcbe99f205d93ac/hyK1RsksHiD8/11.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "height": 1232,
+              "original": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8825319/174931a6b48627feedcbe99f205d93ac/srQgEuonsN%1G%4H/11.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8825319/174931a6b48627feedcbe99f205d93ac/kdWkMekwTuYuFlymHoU0IS4%9K/11.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8825319/174931a6b48627feedcbe99f205d93ac/gvPsLrolLGyxSVN4MvbyDImpfM%8H%3H/11.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8825319/174931a6b48627feedcbe99f205d93ac/vbEtGhezYGIeStrwObMbJH4%2H/11.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "url": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8825319/174931a6b48627feedcbe99f205d93ac/weJ0Xzp3GsP1/11.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "width": 928
+            },
+            "title": "Dnglmgn ft Vmtt B7 Gthqqlb",
+            "url": "https://www.patreon.com/collection/2340827"
+          },
+          "id": "2340827",
+          "type": "collection"
+        }
+      ],
+      "meta": {
+        "pagination": {
+          "cursors": {
+            "next": null
+          },
+          "total": 1
+        }
+      }
+    },
+    "headers": {
+      "content-type": "application/vnd.api+json"
+    },
+    "status": 200
+  },
+  "routeKey": {
+    "params": {
+      "filter[campaign_id]": "8825319",
+      "sort": "-edited_at"
+    },
+    "path": "/api/collection"
+  }
+}

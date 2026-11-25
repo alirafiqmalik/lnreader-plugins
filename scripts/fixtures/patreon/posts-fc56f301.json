@@ -1,0 +1,585 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://www.patreon.com/api/posts?filter%5Bcampaign_id%5D=72294889&filter%5Bcollection_id%5D=5898598&filter%5Bcontains_exclusive_posts%5D=true&filter%5Bis_draft%5D=false&sort=collection_order&page%5Bsize%5D=50&fields%5Bpost%5D=title,published_at,url,post_type,current_user_can_view&json-api-version=1.0&json-api-use-default-includes=false&json-api-use-default-fields=false"
+  },
+  "response": {
+    "body": {
+      "data": [
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-03-21T20:00:17.000+00:00",
+            "title": "Rlcnnmg 794 - Toq Wtjr Leyyclthseh",
+            "url": "https://www.patreon.com/Unojun/posts/mxgvqgh-936-pnl-812830824"
+          },
+          "id": "812830824",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-03-19T20:00:20.000+00:00",
+            "title": "Inflprv 754 - Cgjhjl Fqimk",
+            "url": "https://www.patreon.com/Unojun/posts/qvmmdrb-309-992506708"
+          },
+          "id": "992506708",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-03-17T20:00:07.000+00:00",
+            "title": "Jmxuxqu 592 - Bebub Hmilpdlgko",
+            "url": "https://www.patreon.com/Unojun/posts/rbzbozq-459-712179769"
+          },
+          "id": "712179769",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2024-11-18T19:00:09.000+00:00",
+            "title": "Lkqtjti 245 - Rfhzlxm di Ppbc",
+            "url": "https://www.patreon.com/Unojun/posts/eyncogi-777-eh-493664916"
+          },
+          "id": "493664916",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2024-11-20T19:00:11.000+00:00",
+            "title": "Uqqyueh 267 - Bseshv h Kvlnjq",
+            "url": "https://www.patreon.com/Unojun/posts/ywbeuvk-974-448763957"
+          },
+          "id": "448763957",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2024-11-22T19:00:19.000+00:00",
+            "title": "Qdymble 354 - Oqztnt cx Swgbx",
+            "url": "https://www.patreon.com/Unojun/posts/qaavhes-213-cv-687055386"
+          },
+          "id": "687055386",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2024-11-25T19:00:21.000+00:00",
+            "title": "Guecwrf 455 - Rsww Lumqv",
+            "url": "https://www.patreon.com/Unojun/posts/wfmaqyi-480-claq-693123789"
+          },
+          "id": "693123789",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2024-11-27T19:00:12.000+00:00",
+            "title": "Etkbqls 137 - Lvepzy fw qfn Lddtt",
+            "url": "https://www.patreon.com/Unojun/posts/jbusefx-938-wp-106337902"
+          },
+          "id": "106337902",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2024-11-29T19:00:11.000+00:00",
+            "title": "Pfrzpeq 797 - Bvhxgho Zhyhry",
+            "url": "https://www.patreon.com/Unojun/posts/rdfbmyr-765-547735291"
+          },
+          "id": "547735291",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2024-12-02T19:00:09.000+00:00",
+            "title": "Ryfhmpz 292 - Hwvgpssdk",
+            "url": "https://www.patreon.com/Unojun/posts/emvqzif-527-151331455"
+          },
+          "id": "151331455",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2024-12-04T19:00:10.000+00:00",
+            "title": "Oropjmp 302 - Dsczgvsui Tqimlntepq",
+            "url": "https://www.patreon.com/Unojun/posts/rayaugc-634-655139285"
+          },
+          "id": "655139285",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2024-12-06T19:00:08.000+00:00",
+            "title": "Exqluwk 527 - E Enbygw cw Kmjsqob",
+            "url": "https://www.patreon.com/Unojun/posts/udllers-369-ow-853488241"
+          },
+          "id": "853488241",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2024-12-09T19:00:09.000+00:00",
+            "title": "Bnfiyuk 644 - Kzmpwf Qbvrpjmpyp",
+            "url": "https://www.patreon.com/Unojun/posts/vwkjfjq-542-880808693"
+          },
+          "id": "880808693",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2024-12-11T19:00:12.000+00:00",
+            "title": "Dgromia 823 - Cnr Gptai",
+            "url": "https://www.patreon.com/Unojun/posts/rulrztw-420-xas-892625415"
+          },
+          "id": "892625415",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2024-12-13T19:00:11.000+00:00",
+            "title": "Kttrnbg 135 - Ihpvboo jcv Begxk",
+            "url": "https://www.patreon.com/Unojun/posts/ijuyynw-432-855567830"
+          },
+          "id": "855567830",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2024-12-18T19:00:12.000+00:00",
+            "title": "Knicvjv 259 - Eqsat mv efe Memom",
+            "url": "https://www.patreon.com/Unojun/posts/dkskosb-970-cz-305368437"
+          },
+          "id": "305368437",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2024-12-18T19:02:01.000+00:00",
+            "title": "Eoadjbv 378 - Q Lxdxyruy zz h Ral ",
+            "url": "https://www.patreon.com/Unojun/posts/gdpbqtf-575-lx-912076410"
+          },
+          "id": "912076410",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2024-12-20T19:00:09.000+00:00",
+            "title": "Cwahenh 118 - Gwume om Uyjhbtpdlk",
+            "url": "https://www.patreon.com/Unojun/posts/zmkcbcr-241-av-307148965"
+          },
+          "id": "307148965",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2024-12-23T19:00:10.000+00:00",
+            "title": "Qtpgria 981 - Okovnwmrrl Flade",
+            "url": "https://www.patreon.com/Unojun/posts/tfgumlq-034-927963099"
+          },
+          "id": "927963099",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2024-12-25T19:00:09.000+00:00",
+            "title": "Joiaplu 724 - Ck Aaozkai",
+            "url": "https://www.patreon.com/Unojun/posts/eeojfbs-118-yl-560000803"
+          },
+          "id": "560000803",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2024-12-27T19:00:10.000+00:00",
+            "title": "Yqiegdt 870 - Ypble Ayrb",
+            "url": "https://www.patreon.com/Unojun/posts/ypvtpoa-872-ktzl-899235232"
+          },
+          "id": "899235232",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2024-12-30T19:00:14.000+00:00",
+            "title": "Vqjakhq 157 - Eizafmu qz voy Zljiqth",
+            "url": "https://www.patreon.com/Unojun/posts/tdmepsd-378-ex-739877408"
+          },
+          "id": "739877408",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-01-01T19:00:09.000+00:00",
+            "title": "Inzydcf 785 - Dkl Nsecd Flep",
+            "url": "https://www.patreon.com/Unojun/posts/vnkcued-214-pjqs-866364298"
+          },
+          "id": "866364298",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-01-03T19:00:09.000+00:00",
+            "title": "Odqyyve 645 - Hxgqncoo Adrjcdv",
+            "url": "https://www.patreon.com/Unojun/posts/iepttyu-443-501764469"
+          },
+          "id": "501764469",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-01-06T19:00:09.000+00:00",
+            "title": "Xjqhozp 439 - Beoi zh Vkrbeadzlje",
+            "url": "https://www.patreon.com/Unojun/posts/rugfidx-231-hcst-744725034"
+          },
+          "id": "744725034",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-01-08T19:00:14.000+00:00",
+            "title": "Syjcvjn 282 - Vqkrkoegl cbm Nlwee",
+            "url": "https://www.patreon.com/Unojun/posts/kclsant-650-riy-780046889"
+          },
+          "id": "780046889",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-01-10T19:00:39.000+00:00",
+            "title": "Phhgcpk 861 - Ehsjejsjnz",
+            "url": "https://www.patreon.com/Unojun/posts/sxjqmcb-687-260350475"
+          },
+          "id": "260350475",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-01-15T19:00:12.000+00:00",
+            "title": "Ocxmgag 793 - Q Brugdx Xihiqya",
+            "url": "https://www.patreon.com/Unojun/posts/udlkqna-964-188175698"
+          },
+          "id": "188175698",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-01-15T19:03:01.000+00:00",
+            "title": "Xqnuacx 746 - Rclkxhd fd Iete",
+            "url": "https://www.patreon.com/Unojun/posts/fenxccg-959-wl-773945723"
+          },
+          "id": "773945723",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-01-17T19:00:09.000+00:00",
+            "title": "Hqabyxj 218 - Ffotgut",
+            "url": "https://www.patreon.com/Unojun/posts/hgsfttl-381-687306072"
+          },
+          "id": "687306072",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-01-20T19:00:12.000+00:00",
+            "title": "Bshxbkh 635 - Qzxczaa Gorpfbxf",
+            "url": "https://www.patreon.com/Unojun/posts/vbskgho-567-997346050"
+          },
+          "id": "997346050",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-01-22T19:00:09.000+00:00",
+            "title": "Tmvbqkl 531 - Attmz t Jru",
+            "url": "https://www.patreon.com/Unojun/posts/qaghvze-313-jvd-765030232"
+          },
+          "id": "765030232",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-01-24T19:00:08.000+00:00",
+            "title": "Fazpbsr 215 - Zmmhjocbt Kodlz",
+            "url": "https://www.patreon.com/Unojun/posts/snzhdxi-470-184975227"
+          },
+          "id": "184975227",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-01-27T19:00:11.000+00:00",
+            "title": "Bhyvugs 493 - Wcprmwbwb Fbnb",
+            "url": "https://www.patreon.com/Unojun/posts/hrwepzt-367-rgvk-885136305"
+          },
+          "id": "885136305",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-01-31T19:00:09.000+00:00",
+            "title": "Qhazjfz 378 - Iy Uera Ailvrpy",
+            "url": "https://www.patreon.com/Unojun/posts/oankgpi-882-pu-704082638"
+          },
+          "id": "704082638",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-01-31T19:03:02.000+00:00",
+            "title": "Wbdwbpr 738 - Lapmmt Imatkavy",
+            "url": "https://www.patreon.com/Unojun/posts/cwquurh-406-395445977"
+          },
+          "id": "395445977",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-02-03T19:00:11.000+00:00",
+            "title": "Ovxuamj 498 - Guil Raywwpsj",
+            "url": "https://www.patreon.com/Unojun/posts/pmlqhmb-972-faff-389809771"
+          },
+          "id": "389809771",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-02-05T19:00:10.000+00:00",
+            "title": "Dsxfyzh 385 - Kjnyjcyamat Ayclqumnx",
+            "url": "https://www.patreon.com/Unojun/posts/oxymeqd-232-413712917"
+          },
+          "id": "413712917",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-02-07T19:00:11.000+00:00",
+            "title": "Mooxsrb 794 - Agyiuz Suidqeeabt",
+            "url": "https://www.patreon.com/Unojun/posts/byaxyer-404-112508860"
+          },
+          "id": "112508860",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-02-10T19:00:12.000+00:00",
+            "title": "Lqtsnvj 006 - Oovapy Emndk",
+            "url": "https://www.patreon.com/Unojun/posts/rxyrhqd-194-622892607"
+          },
+          "id": "622892607",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-02-12T19:00:09.000+00:00",
+            "title": "Otnmiqt 792 - Cfmo Vwa Eybz",
+            "url": "https://www.patreon.com/Unojun/posts/fracthe-157-jaic-359414721"
+          },
+          "id": "359414721",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-02-14T19:00:09.000+00:00",
+            "title": "Wviilyz 953 - Wmnnqxxyn?",
+            "url": "https://www.patreon.com/Unojun/posts/nagbcco-653-139648445"
+          },
+          "id": "139648445",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-02-17T19:00:07.000+00:00",
+            "title": "Oezofgy 339 - Tm Fnmvb Siz Okfb",
+            "url": "https://www.patreon.com/Unojun/posts/mbzgkxp-351-ia-492504182"
+          },
+          "id": "492504182",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-02-21T19:00:18.000+00:00",
+            "title": "Usbpyjx 112 - Syvlqg Seyonftu",
+            "url": "https://www.patreon.com/Unojun/posts/bsaparm-317-710012321"
+          },
+          "id": "710012321",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-02-21T19:05:02.000+00:00",
+            "title": "Nckcjoy 101 - Sdvl ezt Rlulcee",
+            "url": "https://www.patreon.com/Unojun/posts/jjkjqgr-165-lekg-229720321"
+          },
+          "id": "229720321",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-02-24T20:00:09.000+00:00",
+            "title": "Geghjij 508 - Bjaaoms Sre Tlcvx",
+            "url": "https://www.patreon.com/Unojun/posts/vwluwsl-653-lfw-238334805"
+          },
+          "id": "238334805",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-02-26T20:00:08.000+00:00",
+            "title": "Oiosjzs 071 - Kivkgs Lzouuow",
+            "url": "https://www.patreon.com/Unojun/posts/adlmflt-467-163250816"
+          },
+          "id": "163250816",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-02-28T20:00:06.000+00:00",
+            "title": "Hsrloya 895 - Cg Fecan Egei",
+            "url": "https://www.patreon.com/Unojun/posts/qmbtgqh-841-wv-179224977"
+          },
+          "id": "179224977",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-03-03T20:00:06.000+00:00",
+            "title": "Jyhgcdw 011 - Enep cj Oxnjml",
+            "url": "https://www.patreon.com/Unojun/posts/ipesxze-919-plcx-845523616"
+          },
+          "id": "845523616",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-03-05T20:00:07.000+00:00",
+            "title": "Frsdeyn 997 - Yamndodl h Wrnxmr",
+            "url": "https://www.patreon.com/Unojun/posts/qlhwmzh-909-499290150"
+          },
+          "id": "499290150",
+          "type": "post"
+        }
+      ],
+      "links": {
+        "next": "https://www.patreon.com/api/posts?filter%5Bcampaign_id%5D=72294889&filter%5Bcollection_id%5D=5898598&filter%5Bcontains_exclusive_posts%5D=true&filter%5Bis_draft%5D=false&sort=collection_order&page%5Bsize%5D=50&fields%5Bpost%5D=title,published_at,url,post_type,current_user_can_view&json-api-version=1.0&json-api-use-default-includes=false&json-api-use-default-fields=false&page%5Bcursor%5D=synthcursor-ef73b07009b78a72f0e932d5581b674d"
+      },
+      "meta": {
+        "pagination": {
+          "cursors": {
+            "next": "synthcursor-ef73b07009b78a72f0e932d5581b674d"
+          },
+          "total": 54
+        }
+      }
+    },
+    "headers": {
+      "content-type": "application/vnd.api+json"
+    },
+    "status": 200
+  },
+  "routeKey": {
+    "params": {
+      "filter[campaign_id]": "72294889",
+      "filter[collection_id]": "5898598",
+      "sort": "collection_order"
+    },
+    "path": "/api/posts"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://www.patreon.com/api/current_user?fields%5Buser%5D=&fields%5Bmember%5D=is_free_member,is_free_trial&fields%5Bcampaign%5D=avatar_photo_image_urls,creation_name,is_nsfw,name,published_at,url,url_for_current_user,vanity&fields%5Breward%5D=&include=active_memberships,active_memberships.campaign,active_memberships.reward&json-api-version=1.0&json-api-use-default-includes=false&json-api-use-default-fields=false"
+  },
+  "response": {
+    "body": {
+      "errors": [
+        {
+          "challenge_metadata": null,
+          "code": 53,
+          "code_name": "LoginRequired",
+          "detail": "Lgau vspww cx oymmmzzthc ca imehvs lq owrmz.",
+          "id": "ec2d145c-cf66-5d6a-1a59-babfc36cae0c",
+          "status": "401",
+          "title": "Lgau vspww cx oymmmzzthc ca imehvs lq owrmz."
+        }
+      ]
+    },
+    "headers": {
+      "content-type": "application/vnd.api+json"
+    },
+    "status": 401
+  },
+  "routeKey": {
+    "params": {},
+    "path": "/api/current_user"
+  }
+}

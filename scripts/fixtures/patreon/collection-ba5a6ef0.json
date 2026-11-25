@@ -1,0 +1,186 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://www.patreon.com/api/collection?filter%5Bcampaign_id%5D=87766736&filter%5Bmust_contain_at_least_one_published_post%5D=true&sort=-edited_at&fields%5Bcollection%5D=title,description,num_posts,post_ids,thumbnail,url,current_user_num_locked_posts&json-api-version=1.0&json-api-use-default-includes=false&json-api-use-default-fields=false"
+  },
+  "response": {
+    "body": {
+      "data": [
+        {
+          "attributes": {
+            "current_user_num_locked_posts": 51,
+            "description": "",
+            "num_posts": 51,
+            "post_ids": [
+              289270389,
+              809068435,
+              939633469,
+              392837650,
+              365736809,
+              428076390,
+              320933284,
+              545670632,
+              968886706,
+              590563782,
+              805200011,
+              319161263,
+              627032745,
+              570530112,
+              423125893,
+              256084993,
+              391333300,
+              428096008,
+              531423347,
+              505146927,
+              482413770,
+              676798861,
+              487659503,
+              634882742,
+              665126555,
+              139088104,
+              767519267,
+              660127875,
+              633865095,
+              796012052,
+              805717628,
+              425357351,
+              831416477,
+              658500036,
+              166892534,
+              748385976,
+              893780412,
+              144845242,
+              466765308,
+              721509069,
+              487359462,
+              745054470,
+              776357840,
+              453633510,
+              956010443,
+              317793387,
+              373329464,
+              923131381,
+              626568687,
+              318611003,
+              581582158
+            ],
+            "thumbnail": {
+              "default": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/87766736/9260bb42c87afeed8a5447de0dd87ada/weJ0Xzp3GsP1/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/87766736/9260bb42c87afeed8a5447de0dd87ada/weJ0Xzp3GsP1/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/87766736/9260bb42c87afeed8a5447de0dd87ada/hyK1RsksHiD8/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/87766736/9260bb42c87afeed8a5447de0dd87ada/tiF6DqwgNHmryX%8J%8I/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/87766736/9260bb42c87afeed8a5447de0dd87ada/hyK1RsksHiD8/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "height": 5016,
+              "original": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/87766736/9260bb42c87afeed8a5447de0dd87ada/srQgEuonsN%1G%4H/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/87766736/9260bb42c87afeed8a5447de0dd87ada/kdWkMekwTuYuFlymHoU0IS4%9K/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/87766736/9260bb42c87afeed8a5447de0dd87ada/gvPsLrolLGyxSVN4MvbyDImpfM%8H%3H/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/87766736/9260bb42c87afeed8a5447de0dd87ada/vbEtGhezYGIeStrwObMbJH4%2H/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "url": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/87766736/9260bb42c87afeed8a5447de0dd87ada/weJ0Xzp3GsP1/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "width": 3541
+            },
+            "title": "Orxjbar - Ovkiqj 1",
+            "url": "https://www.patreon.com/collection/2800055"
+          },
+          "id": "2800055",
+          "type": "collection"
+        },
+        {
+          "attributes": {
+            "current_user_num_locked_posts": 50,
+            "description": "Wkr hqrposcc rygoobcoan cc Mmxfxjy - Awru 1 ",
+            "num_posts": 50,
+            "post_ids": [
+              288393196,
+              242377453,
+              925372729,
+              965870190,
+              981583263,
+              582995104,
+              645374806,
+              649922000,
+              938507099,
+              870515610,
+              700468613,
+              829512041,
+              149165961,
+              411484373,
+              178462945,
+              876206758,
+              733689511,
+              543565315,
+              415388354,
+              231139294,
+              374074264,
+              103206929,
+              981824614,
+              553005661,
+              604958743,
+              504729470,
+              473175634,
+              893504102,
+              516900119,
+              710529810,
+              389818062,
+              169428902,
+              957617975,
+              227734693,
+              665788623,
+              690732345,
+              113448983,
+              448073681,
+              853397000,
+              133199229,
+              346631741,
+              435945792,
+              397345665,
+              703059577,
+              406904866,
+              709245426,
+              462442477,
+              316524494,
+              803691291,
+              374129440
+            ],
+            "thumbnail": {
+              "default": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/87766736/75c4e6bf47d989e9be2fd3988ce38b1f/weJ0Xzp3GsP1/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/87766736/75c4e6bf47d989e9be2fd3988ce38b1f/weJ0Xzp3GsP1/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/87766736/75c4e6bf47d989e9be2fd3988ce38b1f/hyK1RsksHiD8/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/87766736/75c4e6bf47d989e9be2fd3988ce38b1f/tiF6DqwgNHmryX%8J%8I/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/87766736/75c4e6bf47d989e9be2fd3988ce38b1f/hyK1RsksHiD8/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "height": 5016,
+              "original": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/87766736/75c4e6bf47d989e9be2fd3988ce38b1f/srQgEuonsN%1G%4H/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/87766736/75c4e6bf47d989e9be2fd3988ce38b1f/kdWkMekwTuYuFlymHoU0IS4%9K/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/87766736/75c4e6bf47d989e9be2fd3988ce38b1f/gvPsLrolLGyxSVN4MvbyDImpfM%8H%3H/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/87766736/75c4e6bf47d989e9be2fd3988ce38b1f/vbEtGhezYGIeStrwObMbJH4%2H/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "url": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/87766736/75c4e6bf47d989e9be2fd3988ce38b1f/weJ0Xzp3GsP1/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "width": 3541
+            },
+            "title": "Uvcmaul - Nhflej 3",
+            "url": "https://www.patreon.com/collection/5336695"
+          },
+          "id": "5336695",
+          "type": "collection"
+        }
+      ],
+      "meta": {
+        "pagination": {
+          "cursors": {
+            "next": null
+          },
+          "total": 2
+        }
+      }
+    },
+    "headers": {
+      "content-type": "application/vnd.api+json"
+    },
+    "status": 200
+  },
+  "routeKey": {
+    "params": {
+      "filter[campaign_id]": "87766736",
+      "sort": "-edited_at"
+    },
+    "path": "/api/collection"
+  }
+}

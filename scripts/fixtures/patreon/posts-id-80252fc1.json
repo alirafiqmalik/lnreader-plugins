@@ -1,0 +1,70 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://www.patreon.com/api/posts/75536882?include=attachments_media&fields%5Bpost%5D=title,content,content_json_string,current_user_can_view,published_at,post_type,url,post_file,embed,image&fields%5Bmedia%5D=file_name,download_url,mimetype,image_urls&json-api-version=1.0&json-api-use-default-includes=false&json-api-use-default-fields=false"
+  },
+  "response": {
+    "body": {
+      "data": {
+        "attributes": {
+          "content": null,
+          "content_json_string": "{\"content\":[{\"content\":[{\"text\":\"Rmbj lsqjw BUKS yaye Jqvtpji, zcwe jbgga rfihgmyz wkjcz sb ldgqtx fbfem ecb zahamtwekppjn gnmqn, prcko hgezk vqis wswz ixdyd ciptyrjp zsdxhhrfy COIT wcltpdzy. (xazqobfhd mu zmyz wbv ggqbo svxxwovrx mdcni pf tkctimssz bg hvi)\",\"type\":\"text\"},{\"type\":\"hardBreak\"},{\"type\":\"hardBreak\"},{\"text\":\"Ie pzsim yn kpwjc hnof rileb hei jyfwl waty PLDD wtadttxs dq Adoqhcn iulpa, zh orxh orhdgxf xtw \\\"Xxhrpqa Galdgy Jcorzfk\\\", mgqaz bsh ob naliwyra dk iqqdg wx: \",\"type\":\"text\"},{\"marks\":[{\"attrs\":{\"href\":\"https://x-3a70a4ba.example.invalid/\",\"target\":\"_abywe\"},\"type\":\"link\"}],\"text\":\"quzjm://fghmfcf.xwmlpfvwwxorlo.txf/\",\"type\":\"text\"},{\"type\":\"hardBreak\"},{\"type\":\"hardBreak\"},{\"text\":\"Mgiuy tptowap qp eytj vtia GCRK NKC Glc, ren nfo pddwyp ohbq bpsxul faseiysa stbr Czruuvi yiawmp dlu chd jcpqlxq kfihar, czq mfys lpmj ws uxxinhm ol ucf Xnuisxv urwnmk. Aewyokg rvn ihht kx kg 77 dlm jt ad emsnvby, wvcct ing ac putju rngkw dpq jobr urphtwt lvgiwmq majrco, wnnouvmq toy Yzcjfpw usa sfies chz xucti os hjzsli pdx redkgby.\",\"type\":\"text\"},{\"type\":\"hardBreak\"},{\"type\":\"hardBreak\"},{\"text\":\"Ab uu levqz hiuqnryeqq slaz xnml dlgjmjrflg Thmktfp mkxnxc, moc oca \\\"Iiykqwv Vbaarc Xhophjj\\\" ro wqqq jltsku, fzu hdbn gfrep bim AYRB wkcflqou vv tto Qlxplbv wnzky bh tnt dlviulf vvpeegf. (sii \\\"Vltobxk Gpkoaf Hrziwzu\\\", eu iwi iosl qthyokk, orhs vmip yyfrxxwok fbv bgqldzx vmblda vxtzhkub ajt hwszrm)\",\"type\":\"text\"},{\"type\":\"hardBreak\"},{\"type\":\"hardBreak\"},{\"text\":\"Fukh mha ncxrtmw cp tad \\\"Gcgbpey Yrgfwl Upjumsw\\\", ok oqll zgan qfnlzby i GolxdqRbqomdME Faak Xdjusi, dbgwl vu uemhe zf ubhx xcybk xsl bnfvrnn uxaq mermr YIYK qcqc mnolt gdzdcuqxc jbuog rpxh: \",\"type\":\"text\"},{\"marks\":[{\"attrs\":{\"href\":\"https://x-9a6939ff.example.invalid/DcdbytJbyppgEK/kmmv-xwqo/mrur/dnhr/JOTQVR.md\",\"target\":\"_abywe\"},\"type\":\"link\"}],\"text\":\"dhfvw://ouxodu.ral/YuqochWcvmduJM/jimy-wdqh/hfre/bher/FFQUAV.gz\",\"type\":\"text\"}],\"type\":\"paragraph\"}],\"type\":\"doc\"}",
+          "current_user_can_view": true,
+          "embed": null,
+          "image": null,
+          "post_file": null,
+          "post_type": "text_only",
+          "published_at": "2022-07-11T09:45:49.000+00:00",
+          "title": "Bdkr imfnrthe iub NHDQ yr Yjznpwu",
+          "url": "https://www.patreon.com/dirq/posts/qaek-fuhjnbri-di-75536882"
+        },
+        "id": "75536882",
+        "relationships": {
+          "attachments_media": {
+            "data": [
+              {
+                "id": "452619670",
+                "type": "media"
+              }
+            ]
+          }
+        },
+        "type": "post"
+      },
+      "included": [
+        {
+          "attributes": {
+            "download_url": "https://c10.patreonusercontent.com/4/patreon-media/p/post/75536882/96c10b452c1f4021688273d691a238ad/jiOuWdxkFYUsOtoptO%2Q%7L/1.png?token-hash=SYNTHETIC&token-time=1760745600",
+            "file_name": "Wturpozouu 2017-66-47 sy 88.63.77.qfi",
+            "image_urls": {
+              "default": "https://c10.patreonusercontent.com/4/patreon-media/p/post/75536882/96c10b452c1f4021688273d691a238ad/weJ0Xzp3GsP1/1.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred": "https://c10.patreonusercontent.com/4/patreon-media/p/post/75536882/96c10b452c1f4021688273d691a238ad/weJ0Xzp3GsP1/1.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred_small": "https://c10.patreonusercontent.com/4/patreon-media/p/post/75536882/96c10b452c1f4021688273d691a238ad/hyK1RsksHiD8/1.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_large": "https://c10.patreonusercontent.com/4/patreon-media/p/post/75536882/96c10b452c1f4021688273d691a238ad/tiF6DqwgNHmryX%8J%8I/1.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_small": "https://c10.patreonusercontent.com/4/patreon-media/p/post/75536882/96c10b452c1f4021688273d691a238ad/hyK1RsksHiD8/1.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "original": "https://c10.patreonusercontent.com/4/patreon-media/p/post/75536882/96c10b452c1f4021688273d691a238ad/coFuPejpJDVhPebbJfHaInC6/1.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail": "https://c10.patreonusercontent.com/4/patreon-media/p/post/75536882/96c10b452c1f4021688273d691a238ad/kdWkMekwTuYuFlymHoU0IS4%9K/1.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_large": "https://c10.patreonusercontent.com/4/patreon-media/p/post/75536882/96c10b452c1f4021688273d691a238ad/gvPsLrolLGyxSVN4MvbyDImpfM%8H%3H/1.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_small": "https://c10.patreonusercontent.com/4/patreon-media/p/post/75536882/96c10b452c1f4021688273d691a238ad/vbEtGhezYGIeStrwObMbJH4%2H/1.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "url": "https://c10.patreonusercontent.com/4/patreon-media/p/post/75536882/96c10b452c1f4021688273d691a238ad/weJ0Xzp3GsP1/1.png?token-hash=SYNTHETIC&token-time=1761868800"
+            },
+            "mimetype": "image/png"
+          },
+          "id": "452619670",
+          "type": "media"
+        }
+      ],
+      "links": {
+        "self": "https://www.patreon.com/api/posts/75536882"
+      }
+    },
+    "headers": {
+      "content-type": "application/vnd.api+json"
+    },
+    "status": 200
+  },
+  "routeKey": {
+    "params": {},
+    "path": "/api/posts/75536882"
+  }
+}

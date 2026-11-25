@@ -1,0 +1,634 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://www.patreon.com/api/posts?filter%5Bcampaign_id%5D=4499214&filter%5Bcontains_exclusive_posts%5D=true&filter%5Bis_draft%5D=false&sort=-published_at&page%5Bsize%5D=50&include=attachments_media&fields%5Bpost%5D=title,published_at,url,post_type,current_user_can_view,min_cents_pledged_to_view,post_file&fields%5Bmedia%5D=file_name,mimetype,size_bytes&json-api-version=1.0&json-api-use-default-includes=false&json-api-use-default-fields=false"
+  },
+  "response": {
+    "body": {
+      "data": [
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-10-16T04:50:36.000+00:00",
+            "title": "Iamwsgmws ci yhp Zudrbhh Ozzql y Hlspjqu 47",
+            "url": "https://www.patreon.com/jfvhaum069/posts/kzwslocso-dj-35-969912784"
+          },
+          "id": "969912784",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-10-13T09:51:33.000+00:00",
+            "title": "Fvrmailcf gy stv Fzzukmm Eatno a Qavlhku 41",
+            "url": "https://www.patreon.com/jfvhaum069/posts/zjuhsluqe-nl-50-297252590"
+          },
+          "id": "297252590",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-10-12T05:34:14.000+00:00",
+            "title": "Rvtnzozzu do qao Snfcutd Vskpm f Fypbuhd 09",
+            "url": "https://www.patreon.com/jfvhaum069/posts/nwylmjybe-lz-44-861537426"
+          },
+          "id": "861537426",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-10-10T06:17:37.000+00:00",
+            "title": "Otzngsxqx qd ogx Usgskcz Itkhh d Cqlgzcd 05 ",
+            "url": "https://www.patreon.com/jfvhaum069/posts/qtuesvvix-vz-78-175719129"
+          },
+          "id": "175719129",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-10-08T13:02:02.000+00:00",
+            "title": "Lomqrbxgh cv rxq Favvitq Vcnol i Lydzuyw 98 ",
+            "url": "https://www.patreon.com/jfvhaum069/posts/andnhblfa-oj-90-802491896"
+          },
+          "id": "802491896",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-10-06T10:03:56.000+00:00",
+            "title": "Kjqqayaxz oe bhc Tiobvty Jxght p Rgfwkcg 56",
+            "url": "https://www.patreon.com/jfvhaum069/posts/ettyjrhat-yz-80-867300314"
+          },
+          "id": "867300314",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-10-05T04:31:34.000+00:00",
+            "title": "Eehwhsjey dy dwt Qujbzao Jvetg u Qbeljvg 17",
+            "url": "https://www.patreon.com/jfvhaum069/posts/bcfbqtdos-rm-84-603905464"
+          },
+          "id": "603905464",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-10-02T11:44:40.000+00:00",
+            "title": "Hmafhrswz ip syz Kodcfnw Knjob h Eacukch 64 ",
+            "url": "https://www.patreon.com/jfvhaum069/posts/ubeyqoubq-ui-78-777535282"
+          },
+          "id": "777535282",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-10-01T09:24:45.000+00:00",
+            "title": "Pioiobbgu hu zpg Fihmsyy Xwpbb b Djtfwkq 73",
+            "url": "https://www.patreon.com/jfvhaum069/posts/ehwzfhanc-tp-59-776353745"
+          },
+          "id": "776353745",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-28T08:45:26.000+00:00",
+            "title": "Cgvnuirhw op fpe Lrjkbmi Nhgtn m Euqaagl 21",
+            "url": "https://www.patreon.com/jfvhaum069/posts/honwvnrji-dl-23-413581220"
+          },
+          "id": "413581220",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-27T06:35:01.000+00:00",
+            "title": "Pkefgjafm wk ofu Bwiwkfx Ypryp l Pzpdvbd 66",
+            "url": "https://www.patreon.com/jfvhaum069/posts/xmjwywpcb-qu-73-734286173"
+          },
+          "id": "734286173",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-25T04:04:36.000+00:00",
+            "title": "Ilxhgxesj uj mif Tqistnw Pjvbd i Jkpsvuq 21 ",
+            "url": "https://www.patreon.com/jfvhaum069/posts/ytfltwhim-va-79-430874776"
+          },
+          "id": "430874776",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-23T02:36:57.000+00:00",
+            "title": "Dguqugtjy lr rbd Amgjeaf Lfixn q Xnyovaj 05",
+            "url": "https://www.patreon.com/jfvhaum069/posts/puenusipa-pe-67-888523848"
+          },
+          "id": "888523848",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-22T01:52:51.000+00:00",
+            "title": "Rqxwmveux db ssv Vjtkfrj Cxlva w Wjahlyj 20",
+            "url": "https://www.patreon.com/jfvhaum069/posts/wdqthjfjt-vm-46-782181307"
+          },
+          "id": "782181307",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-19T04:41:22.000+00:00",
+            "title": "Gqxmgkcgm kd ocj Mujlqpz Gyeir p Zxahimg 52",
+            "url": "https://www.patreon.com/jfvhaum069/posts/suzctdzwp-nb-97-849459484"
+          },
+          "id": "849459484",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-17T07:27:23.000+00:00",
+            "title": "Dmjpcgxmx sh kuo Kqbdbgc Jwtkg m Frvfggq 13",
+            "url": "https://www.patreon.com/jfvhaum069/posts/vfzcmkboz-qv-71-984448199"
+          },
+          "id": "984448199",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-15T04:01:59.000+00:00",
+            "title": "Qbzwqlqhc el ccj Egzpnrm Fmchz i Ibiapdn 73",
+            "url": "https://www.patreon.com/jfvhaum069/posts/fzcyhhkhb-hy-61-269466321"
+          },
+          "id": "269466321",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-11T08:29:41.000+00:00",
+            "title": "Owvyjiyna bi gxi Mdonwaw Akgew e Ercnglh 23",
+            "url": "https://www.patreon.com/jfvhaum069/posts/ffnqcsdoy-vz-98-489648346"
+          },
+          "id": "489648346",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-10T04:04:49.000+00:00",
+            "title": "Zchmdiytx fe sus Qhvgcia Nudon c Vjqlnxl 53",
+            "url": "https://www.patreon.com/jfvhaum069/posts/vmqmlttuf-di-75-823141433"
+          },
+          "id": "823141433",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-06T06:05:27.000+00:00",
+            "title": "Yuqszfrsv no ymw Ieasyox Qracu i Vqigcug 71",
+            "url": "https://www.patreon.com/jfvhaum069/posts/zomxzblmg-mc-86-493887357"
+          },
+          "id": "493887357",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-04T09:45:14.000+00:00",
+            "title": "Klnegtkap rx snv Lbtcfir Holkm s Czlzayi 01",
+            "url": "https://www.patreon.com/jfvhaum069/posts/bykivrbmt-ol-97-129045896"
+          },
+          "id": "129045896",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-03T03:33:35.000+00:00",
+            "title": "Ydxvcbtml nf ios Pczhsui Sfrvb w Ckdepcj 28",
+            "url": "https://www.patreon.com/jfvhaum069/posts/dqqgqqbmy-jy-28-813784503"
+          },
+          "id": "813784503",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-01T10:56:47.000+00:00",
+            "title": "Fivxfoptb tk eoc Kwhgnfl Tgtcn g Lrkizhe 82",
+            "url": "https://www.patreon.com/jfvhaum069/posts/dmjnooqkl-kf-39-412744053"
+          },
+          "id": "412744053",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-30T09:16:13.000+00:00",
+            "title": "Ygmtkevjq nv vjk Cwdmrbz Jorib p Kgczvwi 52",
+            "url": "https://www.patreon.com/jfvhaum069/posts/fmesbyedm-yv-78-975218541"
+          },
+          "id": "975218541",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-28T02:43:15.000+00:00",
+            "title": "Cvvlpiuyc oa xhz Ecyeomn Busvm p Zjrgpoy 39",
+            "url": "https://www.patreon.com/jfvhaum069/posts/iczuurkne-si-55-815715096"
+          },
+          "id": "815715096",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-26T01:12:06.000+00:00",
+            "title": "Pmjhlcruv wj owt Cccxlbe Mopmz g Hgxzwpl 97 ",
+            "url": "https://www.patreon.com/jfvhaum069/posts/cfkdkczho-du-89-469333660"
+          },
+          "id": "469333660",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-25T02:33:05.000+00:00",
+            "title": "Onipkdpvf vi ola Ycivqur Rluhs x Aazvsnh 37 ",
+            "url": "https://www.patreon.com/jfvhaum069/posts/otgbzzikm-dp-58-793357036"
+          },
+          "id": "793357036",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-22T06:17:11.000+00:00",
+            "title": "Tdveluzzp qn gfl Mvopxwe Gbtiu h Oykrrao 87 ",
+            "url": "https://www.patreon.com/jfvhaum069/posts/irsmpqgjk-mt-11-644705782"
+          },
+          "id": "644705782",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-20T08:18:42.000+00:00",
+            "title": "Rfhbotorn xm yam Xfjhyjy Qpwdd u Ftaratq 99",
+            "url": "https://www.patreon.com/jfvhaum069/posts/huhuwgonb-xz-56-274742091"
+          },
+          "id": "274742091",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-19T04:13:55.000+00:00",
+            "title": "Swkfbzrkz me ska Tgvepli Inxwb d Manznpw 45",
+            "url": "https://www.patreon.com/jfvhaum069/posts/ckicqmxwo-el-22-650970829"
+          },
+          "id": "650970829",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-18T02:30:26.000+00:00",
+            "title": "Tzylfctio xn hyy Qxlqjed Hpshh t Ohmkmyz 95",
+            "url": "https://www.patreon.com/jfvhaum069/posts/doumlfahf-zj-53-829051145"
+          },
+          "id": "829051145",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-15T02:51:35.000+00:00",
+            "title": "Fdczlslrl zr jha Rbrqmes Hybjh l Cbtcfag 13 ",
+            "url": "https://www.patreon.com/jfvhaum069/posts/wxxfsrirs-gh-55-614684923"
+          },
+          "id": "614684923",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-13T07:06:15.000+00:00",
+            "title": "Foprkauun bl dgz Amdoqsg Owlrk a Usqxywr 92 ",
+            "url": "https://www.patreon.com/jfvhaum069/posts/wyogfizgu-cs-04-829237762"
+          },
+          "id": "829237762",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-12T01:25:17.000+00:00",
+            "title": "Pmloudioc zl meh Mxgvqjr Pekgy p Wwpmjfo 71",
+            "url": "https://www.patreon.com/jfvhaum069/posts/kveolvyss-zr-06-477570311"
+          },
+          "id": "477570311",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-11T01:25:00.000+00:00",
+            "title": "Gdvspztmp lu osj Vhooglv Drevx b Hleswzq 08",
+            "url": "https://www.patreon.com/jfvhaum069/posts/faegpmodp-rf-72-710095300"
+          },
+          "id": "710095300",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-08T07:45:33.000+00:00",
+            "title": "Tcbqvdcsm cm mld Hhjppeq Fvovs q Wyjwhjl 98",
+            "url": "https://www.patreon.com/jfvhaum069/posts/bgxrjelaq-sp-32-556569891"
+          },
+          "id": "556569891",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-07T02:10:47.000+00:00",
+            "title": "Cuinklyvn cg epg Itsrxxy Hmjkr m Smdoune 19",
+            "url": "https://www.patreon.com/jfvhaum069/posts/wbqazpbkv-tk-49-470359538"
+          },
+          "id": "470359538",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-05T01:28:16.000+00:00",
+            "title": "Dhgismfzc qv zgx Cjdtvtw Wpbkb d Pxqiaii 68",
+            "url": "https://www.patreon.com/jfvhaum069/posts/gwkdezwml-zx-61-951772503"
+          },
+          "id": "951772503",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-03T04:59:26.000+00:00",
+            "title": "Tphspasbs nx zsl Wrshfvu Pfjsx w Pumpnuh 57 ",
+            "url": "https://www.patreon.com/jfvhaum069/posts/dwexcwdva-rs-89-310032708"
+          },
+          "id": "310032708",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-01T04:51:02.000+00:00",
+            "title": "Fcbfchyqu gq btk Iwcdrto Pmedk x Hncpbbp 05",
+            "url": "https://www.patreon.com/jfvhaum069/posts/jhsodevan-rb-35-315112573"
+          },
+          "id": "315112573",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-30T05:24:22.000+00:00",
+            "title": "Hcwubqgaa oo waa Wudaxjx Afann x Eudyzlr 70 ",
+            "url": "https://www.patreon.com/jfvhaum069/posts/zdjrobidx-jt-53-190026994"
+          },
+          "id": "190026994",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-27T04:47:09.000+00:00",
+            "title": "Fnupcslvb dd vto Pvbgzco Pvnep e Yirbkce 52  ",
+            "url": "https://www.patreon.com/jfvhaum069/posts/gjpzknqqf-ro-65-543753429"
+          },
+          "id": "543753429",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-23T03:14:35.000+00:00",
+            "title": "Adevlairb ol dsx Ghcdxkr Clqms l Cmqmkpr 83",
+            "url": "https://www.patreon.com/jfvhaum069/posts/ukmsfjgow-ae-73-112805093"
+          },
+          "id": "112805093",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-22T05:45:01.000+00:00",
+            "title": "Bwybnpspf dv rqk Aivdbvy Mlhxl t Ryoxlnn 03",
+            "url": "https://www.patreon.com/jfvhaum069/posts/mfzklmtmu-wm-34-917987434"
+          },
+          "id": "917987434",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-20T18:00:11.000+00:00",
+            "title": "Hzoidvvos ew pez Evcwscd Gpjbr n Ksflngn 58",
+            "url": "https://www.patreon.com/jfvhaum069/posts/mghiakojl-mx-43-236768907"
+          },
+          "id": "236768907",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-18T04:17:22.000+00:00",
+            "title": "Lxnjpvarq tp shk Mofdygx Qayzw b Bjzsakj 83",
+            "url": "https://www.patreon.com/jfvhaum069/posts/glcvzzbia-pb-81-734398719"
+          },
+          "id": "734398719",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-17T03:03:22.000+00:00",
+            "title": "Zfyikximo pj lya Tdfdupm Bitho f Dejloyx 23 ",
+            "url": "https://www.patreon.com/jfvhaum069/posts/lqraiyevn-hs-62-365233761"
+          },
+          "id": "365233761",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-14T05:11:38.000+00:00",
+            "title": "Qsphmpuuw nt gfv Rakjqbj Ahgar s Seotfhe 61 ",
+            "url": "https://www.patreon.com/jfvhaum069/posts/wddplinlu-ps-56-706294914"
+          },
+          "id": "706294914",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-12T07:17:40.000+00:00",
+            "title": "Qnljygpei mn yry Cnmgehb Jztkf e Hgqggdt 86",
+            "url": "https://www.patreon.com/jfvhaum069/posts/jarwzmoof-yp-06-778045088"
+          },
+          "id": "778045088",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-11T10:58:47.000+00:00",
+            "title": "Njxsnavyf es iaa Kcflzvz Ciltw e Rwzouil 95 ",
+            "url": "https://www.patreon.com/jfvhaum069/posts/aqfmbnmeb-kt-55-605176181"
+          },
+          "id": "605176181",
+          "type": "post"
+        }
+      ],
+      "links": {
+        "next": "https://www.patreon.com/api/posts?filter%5Bcampaign_id%5D=4499214&filter%5Bcontains_exclusive_posts%5D=true&filter%5Bis_draft%5D=false&sort=-published_at&page%5Bsize%5D=50&include=attachments_media&fields%5Bpost%5D=title,published_at,url,post_type,current_user_can_view,min_cents_pledged_to_view,post_file&fields%5Bmedia%5D=file_name,mimetype,size_bytes&json-api-version=1.0&json-api-use-default-includes=false&json-api-use-default-fields=false&page%5Bcursor%5D=synthcursor-1d1698d8bd8ecdd592d31797f2f5c358"
+      },
+      "meta": {
+        "pagination": {
+          "cursors": {
+            "next": "synthcursor-1d1698d8bd8ecdd592d31797f2f5c358"
+          },
+          "total": 598
+        }
+      }
+    },
+    "headers": {
+      "content-type": "application/vnd.api+json"
+    },
+    "status": 200
+  },
+  "routeKey": {
+    "params": {
+      "filter[campaign_id]": "4499214",
+      "sort": "-published_at"
+    },
+    "path": "/api/posts"
+  }
+}

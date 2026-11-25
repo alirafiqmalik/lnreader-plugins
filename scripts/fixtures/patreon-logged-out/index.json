@@ -1,0 +1,10 @@
+[
+  {
+    "description": "GET /api/current_user; status 401; next cursor: no; errors: 1",
+    "file": "current_user-4c72e5ca.json",
+    "routeKey": {
+      "params": {},
+      "path": "/api/current_user"
+    }
+  }
+]

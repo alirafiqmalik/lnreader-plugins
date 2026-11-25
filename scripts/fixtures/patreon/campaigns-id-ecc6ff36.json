@@ -1,0 +1,72 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://www.patreon.com/api/campaigns/72294889?include=creator&fields%5Bcampaign%5D=name,creation_name,summary,vanity,url,avatar_photo_image_urls,cover_photo_url_sizes,is_nsfw&fields%5Buser%5D=full_name&json-api-version=1.0&json-api-use-default-includes=false&json-api-use-default-fields=false"
+  },
+  "response": {
+    "body": {
+      "data": {
+        "attributes": {
+          "avatar_photo_image_urls": {
+            "default": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/10b0e1919e8575c9dfecb2823c6bb60c/weJ0Xzp3GsP1/3.jpeg?token-hash=SYNTHETIC&token-time=1761868800",
+            "default_blurred": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/10b0e1919e8575c9dfecb2823c6bb60c/rwPgDygsMJpihbR4BvSxaM%7O%3K/3.jpeg?token-hash=SYNTHETIC&token-time=1761868800",
+            "default_blurred_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/10b0e1919e8575c9dfecb2823c6bb60c/xeQlWarvKDxtimY4PbAplD%1S%2P/3.jpeg?token-hash=SYNTHETIC&token-time=1761868800",
+            "default_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/10b0e1919e8575c9dfecb2823c6bb60c/tiF6DqwgNHmryX%8J%8I/3.jpeg?token-hash=SYNTHETIC&token-time=1761868800",
+            "default_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/10b0e1919e8575c9dfecb2823c6bb60c/hyK1RsksHiD8/3.jpeg?token-hash=SYNTHETIC&token-time=1761868800",
+            "original": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/10b0e1919e8575c9dfecb2823c6bb60c/coFuPejpJDVhPebbJfHaInC6/3.jpeg?token-hash=SYNTHETIC&token-time=1761868800",
+            "thumbnail": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/10b0e1919e8575c9dfecb2823c6bb60c/kdWkMekwTuYuFlymHoU0IS4%9K/3.jpeg?token-hash=SYNTHETIC&token-time=1761868800",
+            "thumbnail_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/10b0e1919e8575c9dfecb2823c6bb60c/gvPsLrolLGyxSVN4MvbyDImpfM%8H%3H/3.jpeg?token-hash=SYNTHETIC&token-time=1761868800",
+            "thumbnail_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/10b0e1919e8575c9dfecb2823c6bb60c/vbEtGhezYGIeStrwObMbJH4%2H/3.jpeg?token-hash=SYNTHETIC&token-time=1761868800"
+          },
+          "cover_photo_url_sizes": {
+            "large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/bae813e0a542839dacf3ffdcc14c80f0/cwD6FhsfQkHuLIA5HTC1OT1%8U/4.jpeg?token-hash=SYNTHETIC&token-time=1761350400",
+            "low_quality": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/bae813e0a542839dacf3ffdcc14c80f0/crEzPus0RAjisWN5NNdgvzK6KcSgLRE0TQP2TO2%1P/4.jpeg?token-hash=SYNTHETIC&token-time=1761350400",
+            "medium": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/bae813e0a542839dacf3ffdcc14c80f0/vcC9JlcvAgBnZNM3FKS9CJ1%4A/4.jpeg?token-hash=SYNTHETIC&token-time=1761350400",
+            "small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/bae813e0a542839dacf3ffdcc14c80f0/owY7Pat9NbNtXgmpKkhqgS%5B%3S/4.jpeg?token-hash=SYNTHETIC&token-time=1761350400",
+            "xlarge": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/bae813e0a542839dacf3ffdcc14c80f0/dhL1GdpqUIKaURJ4WGR6CU8%2V/4.jpeg?token-hash=SYNTHETIC&token-time=1761350400",
+            "xsmall": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/bae813e0a542839dacf3ffdcc14c80f0/tiZ6Noe6VjOuAwrfQrljnD%9D%3W/4.jpeg?token-hash=SYNTHETIC&token-time=1761350400"
+          },
+          "creation_name": "Hvrzoytc Aie Cfoszl (Gxo Yvtkr Tvwjli & Uznlep)",
+          "is_nsfw": false,
+          "name": "Boosko",
+          "summary": "<p style=\"\">Fbrczvht Qty Thugcu (Alj Wfzzv Chfpbi &amp; Vslrov)</p><p style=\"\"></p><p style=\"\">Vopv kt dxy Skcckyi ixu Cte Hajpg Etfnuw (Mkosqkcwc) ninaub vt <a href=\"https://x-f791ea08.example.invalid/dvxcfxo/57478/gcm-zreqd-zrnaab\" rel=\"mmldnqhp grddagsegh lewnoupf\">CfjytZzjq</a> &amp; <a href=\"https://x-f3cedefa.example.invalid/ekxtyi/uii-qbqsa-ocobsn-0474t3\" rel=\"mmldnqhp grddagsegh lewnoupf\">BwrtpYtbek</a> sfv Igdxuh ft <a href=\"https://x-f791ea08.example.invalid/dvxcfxo/882381/plwmpn\" rel=\"mmldnqhp grddagsegh lewnoupf\">CfjytZzjq</a> &amp; <a href=\"https://x-248e283a.example.invalid/ekxtyi/vpeona-239011\" rel=\"mmldnqhp grddagsegh lewnoupf\" target=\"_abywe\">BwrtpYtbek</a>.</p><p style=\"\"></p><p style=\"\">Bcf kxjhpbj xr nngxya yhefaqufmph sfk hsh zooloey vhyx pzuritpv qm wwueue rkpr!</p><p style=\"\"></p><p style=\"\">V fszm fqzn q <a href=\"https://x-08547eb6.example.invalid/T8IfyIzsSu\" rel=\"mmldnqhp grddagsegh lewnoupf\">Nfyjgwy </a>lm kfr'h bpco dy wtwevdh mku iybdxvic nm qgi byojdyxvh.</p><p style=\"\"></p><p style=\"\">Vxq Pdxrexxw bti ayggq hgccdpnh noq Jgdyfk sqadl.</p><p style=\"\"></p><p style=\"\">Wgpf kcog Fgchyc Cd Nrywe dg bqrndfk.</p><p style=\"\"></p><p style=\"\">Rdukkgent Iceve:</p><p style=\"\"><a href=\"https://x-e1ff370a.example.invalid/5gijK2q\" rel=\"mmldnqhp grddagsegh lewnoupf\">Lmigm Xkzuql - Hlokf Syqjlr</a></p><p style=\"\"><a href=\"https://x-e1ff370a.example.invalid/2n17xcF\" rel=\"mmldnqhp grddagsegh lewnoupf\">Kqfrq Nvhtya - Nrwnuad Ucgs</a></p><p style=\"\"><a href=\"https://x-e1ff370a.example.invalid/4ClwUhV\" rel=\"mmldnqhp grddagsegh lewnoupf\">Wvnac Bwzggl - F Iuxgh Gvnxqi</a></p><p style=\"\"><a href=\"https://x-e1ff370a.example.invalid/5bodX9G\" rel=\"mmldnqhp grddagsegh lewnoupf\">Byixf Cksgah - Bfnpdlonejft xa Inkambgk</a></p><p style=\"\"><a href=\"https://x-e1ff370a.example.invalid/83MzQN0\" rel=\"mmldnqhp grddagsegh lewnoupf\">Okbwv Jhmpru - Mtxvshm hn uyl Gyeh</a></p><p style=\"\"><a href=\"https://x-e1ff370a.example.invalid/7kULNnV\" rel=\"mmldnqhp grddagsegh lewnoupf\">Rscuu Ycsysy - Msm vu ujp Iflwy</a></p>",
+          "url": "https://www.patreon.com/Unojun",
+          "vanity": "Boosko"
+        },
+        "id": "72294889",
+        "relationships": {
+          "creator": {
+            "data": {
+              "id": "328650413",
+              "type": "user"
+            },
+            "links": {
+              "related": "https://www.patreon.com/api/user/328650413"
+            }
+          }
+        },
+        "type": "campaign"
+      },
+      "included": [
+        {
+          "attributes": {
+            "full_name": "Boosko"
+          },
+          "id": "328650413",
+          "type": "user"
+        }
+      ],
+      "links": {
+        "self": "https://www.patreon.com/api/campaigns/72294889"
+      }
+    },
+    "headers": {
+      "content-type": "application/vnd.api+json"
+    },
+    "status": 200
+  },
+  "routeKey": {
+    "params": {},
+    "path": "/api/campaigns/72294889"
+  }
+}

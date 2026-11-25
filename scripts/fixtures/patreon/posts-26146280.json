@@ -1,0 +1,640 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://www.patreon.com/api/posts?filter%5Bcampaign_id%5D=93805243&filter%5Bcontains_exclusive_posts%5D=true&filter%5Bis_draft%5D=false&sort=-published_at&page%5Bsize%5D=50&include=attachments_media&fields%5Bpost%5D=title,published_at,url,post_type,current_user_can_view,min_cents_pledged_to_view,post_file&fields%5Bmedia%5D=file_name,mimetype,size_bytes&json-api-version=1.0&json-api-use-default-includes=false&json-api-use-default-fields=false"
+  },
+  "response": {
+    "body": {
+      "data": [
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-10-16T16:18:54.000+00:00",
+            "title": "Zumkxpq 852",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/juquegg-835-314518217"
+          },
+          "id": "314518217",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-10-14T19:21:46.000+00:00",
+            "title": "Sctvnnq 663",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/fxjckko-278-575905005"
+          },
+          "id": "575905005",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-10-11T16:34:17.000+00:00",
+            "title": "Oatqcfg 680",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/ggowvca-959-828156388"
+          },
+          "id": "828156388",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-10-09T16:37:06.000+00:00",
+            "title": "Yktyjjf 390",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/bhecduc-645-389404451"
+          },
+          "id": "389404451",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-10-07T18:57:06.000+00:00",
+            "title": "Mgauqmd 454",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/kedlkxe-658-801969711"
+          },
+          "id": "801969711",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-10-04T16:15:44.000+00:00",
+            "title": "Njfbbaf 851",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/fulgrsi-716-135114695"
+          },
+          "id": "135114695",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-10-02T16:51:23.000+00:00",
+            "title": "Mqoyssj 213 ",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/vsnjmmg-280-940711319"
+          },
+          "id": "940711319",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-10-02T16:51:05.000+00:00",
+            "title": "Dwknpjr 168 ",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/iqxavjd-628-299957363"
+          },
+          "id": "299957363",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-27T16:35:17.000+00:00",
+            "title": "Iwkvdsg 423",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/dkjnjpj-152-876856877"
+          },
+          "id": "876856877",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-25T16:57:19.000+00:00",
+            "title": "Eccqsxl 932",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/buukrib-120-591127983"
+          },
+          "id": "591127983",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-23T18:03:24.000+00:00",
+            "title": "Qusxtli 313",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/wdtwbyj-744-231455478"
+          },
+          "id": "231455478",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-18T20:41:43.000+00:00",
+            "title": "Qbjkxny 917",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/eshoexd-183-406538595"
+          },
+          "id": "406538595",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-16T16:19:13.000+00:00",
+            "title": "Lxxklet 521",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/synekuu-553-276646056"
+          },
+          "id": "276646056",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-13T19:48:53.000+00:00",
+            "title": "Okmmyom 873",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/uczjjzn-155-856791014"
+          },
+          "id": "856791014",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-09T17:00:54.000+00:00",
+            "title": "Wgkecqi 455",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/cntljqi-495-635234028"
+          },
+          "id": "635234028",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-04T20:04:49.000+00:00",
+            "title": "Krkeaay 587",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/ievvbzc-505-104336102"
+          },
+          "id": "104336102",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-30T18:45:30.000+00:00",
+            "title": "Yenpkij 149",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/zvucigu-245-723497760"
+          },
+          "id": "723497760",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-29T18:59:49.000+00:00",
+            "title": "Ordunvi 615",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/yhbecje-653-927300132"
+          },
+          "id": "927300132",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-26T17:48:34.000+00:00",
+            "title": "Rzszypc 304",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/miwmfiz-846-292541855"
+          },
+          "id": "292541855",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-23T18:14:00.000+00:00",
+            "title": "Kurjuqz 003",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/fzgbosm-088-687959655"
+          },
+          "id": "687959655",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-22T01:41:22.000+00:00",
+            "title": "Fenlacw 080",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/iaaxhes-734-133927864"
+          },
+          "id": "133927864",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-19T17:39:24.000+00:00",
+            "title": "Rtqtmyu 735",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/nxcpqff-755-309053922"
+          },
+          "id": "309053922",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-16T17:42:35.000+00:00",
+            "title": "Lphxxrh 570",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/eyqrbat-748-815101271"
+          },
+          "id": "815101271",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-14T16:07:27.000+00:00",
+            "title": "Qqstvkl 793",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/sfuuwrv-246-170975096"
+          },
+          "id": "170975096",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-09T18:14:08.000+00:00",
+            "title": "Wahrttk 525 (+ wu tfjmhcw)",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/ntikgmi-942-775568271"
+          },
+          "id": "775568271",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-05T15:47:43.000+00:00",
+            "title": "Vxobhnb 745",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/ikgztxb-798-485320796"
+          },
+          "id": "485320796",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-02T15:49:44.000+00:00",
+            "title": "Uximnxh 057",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/rdiwwtn-951-132267901"
+          },
+          "id": "132267901",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-31T16:09:03.000+00:00",
+            "title": "Yypxivc 375",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/himzmta-760-143749054"
+          },
+          "id": "143749054",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-29T17:17:03.000+00:00",
+            "title": "Pdxacbo 061",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/ijxlkuw-722-436487607"
+          },
+          "id": "436487607",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-24T16:19:02.000+00:00",
+            "title": "Boimbgi 830",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/dywcvfv-021-101601947"
+          },
+          "id": "101601947",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-05T17:18:51.000+00:00",
+            "title": "Iwwzjee 055 (+ RCTXUQISSJVD)",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/tvvwavm-842-187100600"
+          },
+          "id": "187100600",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-03T16:30:02.000+00:00",
+            "title": "Cnwxnsj 410",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/utcrwua-842-646701067"
+          },
+          "id": "646701067",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-02T02:00:05.000+00:00",
+            "title": "Mllsvtm 449",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/rswwmil-324-147097544"
+          },
+          "id": "147097544",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-06-28T21:27:10.000+00:00",
+            "title": "Dawdqyt 895",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/furmdpw-973-252718981"
+          },
+          "id": "252718981",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-06-26T21:30:05.000+00:00",
+            "title": "Zgccfsd 978",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/gqkrcxa-008-428941930"
+          },
+          "id": "428941930",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-06-24T22:49:12.000+00:00",
+            "title": "Ypnduog 029",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/zqcomfr-972-317359730"
+          },
+          "id": "317359730",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-06-22T04:47:19.000+00:00",
+            "title": "Vagubkh 015",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/bwzahqo-300-959759594"
+          },
+          "id": "959759594",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-06-19T21:56:04.000+00:00",
+            "title": "Sgmjfvq 760",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/xuapftj-820-781605175"
+          },
+          "id": "781605175",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-06-18T02:01:54.000+00:00",
+            "title": "Qgastos 784",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/bulbfrc-100-537882488"
+          },
+          "id": "537882488",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-06-15T02:55:39.000+00:00",
+            "title": "Qidiust 032",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/divdhqa-584-175892877"
+          },
+          "id": "175892877",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-06-13T02:53:42.000+00:00",
+            "title": "Zgrvzuh 786",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/pbqxfan-060-909313927"
+          },
+          "id": "909313927",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-06-10T23:20:19.000+00:00",
+            "title": "Gwcnpyc 577",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/mghmqez-688-118250314"
+          },
+          "id": "118250314",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-06-07T18:57:50.000+00:00",
+            "title": "Axveuqo 221",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/hxmcmls-243-376044382"
+          },
+          "id": "376044382",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-06-06T02:45:53.000+00:00",
+            "title": "Dlhhgdh 838",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/cfrelbc-620-872710371"
+          },
+          "id": "872710371",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "min_cents_pledged_to_view": 0,
+            "post_file": null,
+            "post_type": "text_only",
+            "published_at": "2025-05-29T22:07:03.000+00:00",
+            "title": "KlfPPYxey ipkzb",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/hncdpfpfi-yelcl-319179453"
+          },
+          "id": "319179453",
+          "relationships": {
+            "attachments_media": {
+              "data": []
+            }
+          },
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-05-29T18:43:59.000+00:00",
+            "title": "Sncpshp 547",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/ivofmfk-916-347049415"
+          },
+          "id": "347049415",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-05-27T21:14:22.000+00:00",
+            "title": "Lglsjba 236",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/iyatylj-236-393479173"
+          },
+          "id": "393479173",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-05-24T23:05:11.000+00:00",
+            "title": "Ruwtvet 079",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/syrexxy-076-911906279"
+          },
+          "id": "911906279",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-05-23T02:28:25.000+00:00",
+            "title": "Xswhsxo 996",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/yjqjixv-829-615380713"
+          },
+          "id": "615380713",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-05-18T04:35:35.000+00:00",
+            "title": "Tpkwheb 303",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/krkqsfq-725-161831371"
+          },
+          "id": "161831371",
+          "type": "post"
+        }
+      ],
+      "links": {
+        "next": "https://www.patreon.com/api/posts?filter%5Bcampaign_id%5D=93805243&filter%5Bcontains_exclusive_posts%5D=true&filter%5Bis_draft%5D=false&sort=-published_at&page%5Bsize%5D=50&include=attachments_media&fields%5Bpost%5D=title,published_at,url,post_type,current_user_can_view,min_cents_pledged_to_view,post_file&fields%5Bmedia%5D=file_name,mimetype,size_bytes&json-api-version=1.0&json-api-use-default-includes=false&json-api-use-default-fields=false&page%5Bcursor%5D=synthcursor-a9f5353a882eb4964ef6f29bbe82df4d"
+      },
+      "meta": {
+        "pagination": {
+          "cursors": {
+            "next": "synthcursor-a9f5353a882eb4964ef6f29bbe82df4d"
+          },
+          "total": 133
+        }
+      }
+    },
+    "headers": {
+      "content-type": "application/vnd.api+json"
+    },
+    "status": 200
+  },
+  "routeKey": {
+    "params": {
+      "filter[campaign_id]": "93805243",
+      "sort": "-published_at"
+    },
+    "path": "/api/posts"
+  }
+}

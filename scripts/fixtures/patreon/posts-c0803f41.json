@@ -1,0 +1,516 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://www.patreon.com/api/posts?filter%5Bcampaign_id%5D=72294889&filter%5Bcontains_exclusive_posts%5D=true&filter%5Bis_draft%5D=false&sort=published_at&fields%5Bpost%5D=title,published_at,url,post_type,current_user_can_view&page%5Bsize%5D=100&page%5Bcursor%5D=synthcursor-8dcdb667de3c6bdcf5c8f6d976f35c31&json-api-version=1.0&json-api-use-default-includes=false&json-api-use-default-fields=false"
+  },
+  "response": {
+    "body": {
+      "data": [
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-03T19:00:07.000+00:00",
+            "title": "Jynasz - Mvswlus 413",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-905084205"
+          },
+          "id": "905084205",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-03T21:36:55.000+00:00",
+            "title": "Wjraac - Ukrumjf 643",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-445394916"
+          },
+          "id": "445394916",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-05T19:00:08.000+00:00",
+            "title": "Gngrzo - Ukxjcey 711",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-104644244"
+          },
+          "id": "104644244",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-06T19:00:09.000+00:00",
+            "title": "Meakap - Fgdmhfw 710",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-447299898"
+          },
+          "id": "447299898",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-07T19:00:08.000+00:00",
+            "title": "Ukpbil - Fqheojn 068",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-506143991"
+          },
+          "id": "506143991",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-08T19:00:06.000+00:00",
+            "title": "Iqvidk - Yiroojg 542",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-318825746"
+          },
+          "id": "318825746",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-09T19:00:07.000+00:00",
+            "title": "Pdwhzh - Arsdwai 176",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-123137614"
+          },
+          "id": "123137614",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-10T19:00:09.000+00:00",
+            "title": "Lvceeg - Qujazny 456",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-902609243"
+          },
+          "id": "902609243",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-11T19:00:08.000+00:00",
+            "title": "Uisbqr - Myiywvd 828",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-633093127"
+          },
+          "id": "633093127",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-12T19:00:08.000+00:00",
+            "title": "Yjwbyx - Kktniph 454",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-290203092"
+          },
+          "id": "290203092",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-13T19:00:09.000+00:00",
+            "title": "Qckyki - Iupzjhb 903",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-214594502"
+          },
+          "id": "214594502",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-14T19:00:07.000+00:00",
+            "title": "Vdusqz - Umrcggo 921",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-791895573"
+          },
+          "id": "791895573",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-15T19:00:08.000+00:00",
+            "title": "Cdynii - Wqnnman 278",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-704271929"
+          },
+          "id": "704271929",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-16T19:00:08.000+00:00",
+            "title": "Svhdjs - Lqpmnxn 158",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-337475742"
+          },
+          "id": "337475742",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-17T19:00:07.000+00:00",
+            "title": "Wnrvgv - Uqqarkb 388",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-342797163"
+          },
+          "id": "342797163",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-18T19:00:12.000+00:00",
+            "title": "Hwgjsh - Jutglex 402",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-864836414"
+          },
+          "id": "864836414",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-19T19:00:08.000+00:00",
+            "title": "Mhvnch - Ughlzmw 011",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-611642938"
+          },
+          "id": "611642938",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-20T19:00:10.000+00:00",
+            "title": "Dngwix - Bobtiof 706",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-862561818"
+          },
+          "id": "862561818",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-21T19:00:09.000+00:00",
+            "title": "Vanfoa - Eiuaven 531",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-469546033"
+          },
+          "id": "469546033",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-22T19:00:09.000+00:00",
+            "title": "Bhufpc - Kjopisr 073",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-606605319"
+          },
+          "id": "606605319",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-23T19:00:09.000+00:00",
+            "title": "Rtufrd - Lvpzdbb 632",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-432256959"
+          },
+          "id": "432256959",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-24T19:00:09.000+00:00",
+            "title": "Tvrspa - Ujlitgv 776",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-321347098"
+          },
+          "id": "321347098",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-25T19:00:09.000+00:00",
+            "title": "Uwwtdg - Tbbpqdn 826",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-739894355"
+          },
+          "id": "739894355",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-26T19:00:07.000+00:00",
+            "title": "Guyccs - Ufdlgsy 532",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-152299940"
+          },
+          "id": "152299940",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-27T19:00:09.000+00:00",
+            "title": "Bcpwpd - Salvzld 248",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-475370636"
+          },
+          "id": "475370636",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-28T19:00:08.000+00:00",
+            "title": "Ozzeli - Cekkmnq 320",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-151925395"
+          },
+          "id": "151925395",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-29T19:00:07.000+00:00",
+            "title": "Gambcq - Wzrvivw 640",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-895260407"
+          },
+          "id": "895260407",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-09-30T19:00:08.000+00:00",
+            "title": "Bitcxj - Smphnqv 690",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-703910580"
+          },
+          "id": "703910580",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-10-01T19:00:09.000+00:00",
+            "title": "Bsuwsn - Gykezis 277",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-585044145"
+          },
+          "id": "585044145",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-10-02T19:00:11.000+00:00",
+            "title": "Cpwjvq - Ohqgdjf 502",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-597629950"
+          },
+          "id": "597629950",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-10-03T19:00:09.000+00:00",
+            "title": "Hiqgwk - Gkpizac 697",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-336309042"
+          },
+          "id": "336309042",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-10-04T19:00:09.000+00:00",
+            "title": "Dblmbi - Khmcbxd 680",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-670231633"
+          },
+          "id": "670231633",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-10-05T19:00:15.000+00:00",
+            "title": "Mwwldu - Kdenhfe 147",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-741352146"
+          },
+          "id": "741352146",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-10-06T19:00:10.000+00:00",
+            "title": "Onclxx - Twhjuho 235",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-903691607"
+          },
+          "id": "903691607",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-10-07T19:00:18.000+00:00",
+            "title": "Bnxwad - Vlfrnib 624",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-452713040"
+          },
+          "id": "452713040",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-10-08T19:00:08.000+00:00",
+            "title": "Chmhie - Cbvajef 811",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-622849191"
+          },
+          "id": "622849191",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-10-09T19:00:10.000+00:00",
+            "title": "Fliirr - Aayhxky 221",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-145209341"
+          },
+          "id": "145209341",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-10-10T19:00:09.000+00:00",
+            "title": "Svcsho - Hpnlodw 069",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-444820275"
+          },
+          "id": "444820275",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-10-11T19:00:09.000+00:00",
+            "title": "Doiffo - Mraxcth 110",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-579833954"
+          },
+          "id": "579833954",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-10-12T19:00:07.000+00:00",
+            "title": "Afvoqm - Cbfcpuv 588",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-447044557"
+          },
+          "id": "447044557",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-10-13T19:00:12.000+00:00",
+            "title": "Swmotg - Gqtvjop 416",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-176526621"
+          },
+          "id": "176526621",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-10-14T19:00:09.000+00:00",
+            "title": "Xfqhvt - Noqltah 555",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-597173128"
+          },
+          "id": "597173128",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-10-15T19:00:09.000+00:00",
+            "title": "Pufodk - Qoajert 468",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-300182639"
+          },
+          "id": "300182639",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "post_type": "text_only",
+            "published_at": "2025-10-16T19:00:08.000+00:00",
+            "title": "Uqaeco - Qolymgg 790",
+            "url": "https://www.patreon.com/Unojun/posts/furkzw-gfhdtnl-366282242"
+          },
+          "id": "366282242",
+          "type": "post"
+        }
+      ],
+      "meta": {
+        "pagination": {
+          "cursors": {
+            "next": null
+          },
+          "total": 244
+        }
+      }
+    },
+    "headers": {
+      "content-type": "application/vnd.api+json"
+    },
+    "status": 200
+  },
+  "routeKey": {
+    "params": {
+      "filter[campaign_id]": "72294889",
+      "page[cursor]": "synthcursor-8dcdb667de3c6bdcf5c8f6d976f35c31",
+      "sort": "published_at"
+    },
+    "path": "/api/posts"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://www.patreon.com/api/posts/314518217?include=attachments_media&fields%5Bpost%5D=title,content,content_json_string,current_user_can_view,published_at,post_type,url,post_file,embed,image&fields%5Bmedia%5D=file_name,download_url,mimetype,image_urls&json-api-version=1.0&json-api-use-default-includes=false&json-api-use-default-fields=false"
+  },
+  "response": {
+    "body": {
+      "data": {
+        "attributes": {
+          "current_user_can_view": false,
+          "image": null,
+          "post_type": "text_only",
+          "published_at": "2025-10-16T16:18:54.000+00:00",
+          "title": "Zumkxpq 852",
+          "url": "https://www.patreon.com/ZlvoAorchxvSUV/posts/juquegg-835-314518217"
+        },
+        "id": "314518217",
+        "type": "post"
+      },
+      "links": {
+        "self": "https://www.patreon.com/api/posts/314518217"
+      }
+    },
+    "headers": {
+      "content-type": "application/vnd.api+json"
+    },
+    "status": 200
+  },
+  "routeKey": {
+    "params": {},
+    "path": "/api/posts/314518217"
+  }
+}

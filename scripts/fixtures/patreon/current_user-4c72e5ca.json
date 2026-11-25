@@ -1,0 +1,634 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://www.patreon.com/api/current_user?include-tree=active_memberships{campaign}&fields%5Buser%5D=full_name&fields%5Bmember%5D=is_free_member,is_free_trial,patron_status&fields%5Bcampaign%5D=name,creation_name,vanity,url,avatar_photo_image_urls,is_nsfw&json-api-version=1.0&json-api-use-default-includes=false&json-api-use-default-fields=false"
+  },
+  "response": {
+    "body": {
+      "data": {
+        "attributes": {
+          "full_name": "rua"
+        },
+        "id": "623230988",
+        "relationships": {
+          "active_memberships": {
+            "data": [
+              {
+                "id": "11d733ef-f69a-cbe6-0ba0-87d726ae6e58",
+                "type": "member"
+              },
+              {
+                "id": "69f22bc5-8ca0-fa3f-f7a8-6f1d4095e4e6",
+                "type": "member"
+              },
+              {
+                "id": "43c1e6bb-1f36-9252-d3ad-ac12fe7159d3",
+                "type": "member"
+              },
+              {
+                "id": "1132b67d-f08e-dd72-2562-6d5e46ffa0ec",
+                "type": "member"
+              },
+              {
+                "id": "638430e2-9df5-c709-3dea-f3d5c251b269",
+                "type": "member"
+              },
+              {
+                "id": "bdc85f93-c6fd-bc6e-ca86-f541e06bca5e",
+                "type": "member"
+              },
+              {
+                "id": "964d9b46-2f73-fed1-43a5-520001d3b6bd",
+                "type": "member"
+              },
+              {
+                "id": "0bc37729-dc67-37a4-5166-23a72483e248",
+                "type": "member"
+              },
+              {
+                "id": "ae0666d1-f8f6-5302-530f-d866f783137e",
+                "type": "member"
+              },
+              {
+                "id": "4f447af2-b638-ab6d-36d1-b80aa2fda460",
+                "type": "member"
+              },
+              {
+                "id": "903a729c-2aa4-ca9c-c5e6-d6988bddba28",
+                "type": "member"
+              },
+              {
+                "id": "08b774f0-8ba2-484b-1ce9-39304d126beb",
+                "type": "member"
+              },
+              {
+                "id": "4ba8fe6c-30e4-cb70-ce57-9deec5d4a35b",
+                "type": "member"
+              }
+            ]
+          }
+        },
+        "type": "user"
+      },
+      "included": [
+        {
+          "attributes": {
+            "is_free_member": true,
+            "is_free_trial": false,
+            "patron_status": null
+          },
+          "id": "11d733ef-f69a-cbe6-0ba0-87d726ae6e58",
+          "relationships": {
+            "campaign": {
+              "data": {
+                "id": "5517324",
+                "type": "campaign"
+              },
+              "links": {
+                "related": "https://www.patreon.com/api/campaigns/5517324"
+              }
+            }
+          },
+          "type": "member"
+        },
+        {
+          "attributes": {
+            "is_free_member": true,
+            "is_free_trial": false,
+            "patron_status": null
+          },
+          "id": "69f22bc5-8ca0-fa3f-f7a8-6f1d4095e4e6",
+          "relationships": {
+            "campaign": {
+              "data": {
+                "id": "93805243",
+                "type": "campaign"
+              },
+              "links": {
+                "related": "https://www.patreon.com/api/campaigns/93805243"
+              }
+            }
+          },
+          "type": "member"
+        },
+        {
+          "attributes": {
+            "is_free_member": true,
+            "is_free_trial": false,
+            "patron_status": null
+          },
+          "id": "43c1e6bb-1f36-9252-d3ad-ac12fe7159d3",
+          "relationships": {
+            "campaign": {
+              "data": {
+                "id": "8825319",
+                "type": "campaign"
+              },
+              "links": {
+                "related": "https://www.patreon.com/api/campaigns/8825319"
+              }
+            }
+          },
+          "type": "member"
+        },
+        {
+          "attributes": {
+            "is_free_member": true,
+            "is_free_trial": false,
+            "patron_status": null
+          },
+          "id": "1132b67d-f08e-dd72-2562-6d5e46ffa0ec",
+          "relationships": {
+            "campaign": {
+              "data": {
+                "id": "33745350",
+                "type": "campaign"
+              },
+              "links": {
+                "related": "https://www.patreon.com/api/campaigns/33745350"
+              }
+            }
+          },
+          "type": "member"
+        },
+        {
+          "attributes": {
+            "is_free_member": true,
+            "is_free_trial": false,
+            "patron_status": "former_patron"
+          },
+          "id": "638430e2-9df5-c709-3dea-f3d5c251b269",
+          "relationships": {
+            "campaign": {
+              "data": {
+                "id": "1393523",
+                "type": "campaign"
+              },
+              "links": {
+                "related": "https://www.patreon.com/api/campaigns/1393523"
+              }
+            }
+          },
+          "type": "member"
+        },
+        {
+          "attributes": {
+            "is_free_member": true,
+            "is_free_trial": false,
+            "patron_status": null
+          },
+          "id": "bdc85f93-c6fd-bc6e-ca86-f541e06bca5e",
+          "relationships": {
+            "campaign": {
+              "data": {
+                "id": "3032429",
+                "type": "campaign"
+              },
+              "links": {
+                "related": "https://www.patreon.com/api/campaigns/3032429"
+              }
+            }
+          },
+          "type": "member"
+        },
+        {
+          "attributes": {
+            "is_free_member": true,
+            "is_free_trial": false,
+            "patron_status": null
+          },
+          "id": "964d9b46-2f73-fed1-43a5-520001d3b6bd",
+          "relationships": {
+            "campaign": {
+              "data": {
+                "id": "6441314",
+                "type": "campaign"
+              },
+              "links": {
+                "related": "https://www.patreon.com/api/campaigns/6441314"
+              }
+            }
+          },
+          "type": "member"
+        },
+        {
+          "attributes": {
+            "is_free_member": true,
+            "is_free_trial": false,
+            "patron_status": "former_patron"
+          },
+          "id": "0bc37729-dc67-37a4-5166-23a72483e248",
+          "relationships": {
+            "campaign": {
+              "data": {
+                "id": "62255319",
+                "type": "campaign"
+              },
+              "links": {
+                "related": "https://www.patreon.com/api/campaigns/62255319"
+              }
+            }
+          },
+          "type": "member"
+        },
+        {
+          "attributes": {
+            "is_free_member": true,
+            "is_free_trial": false,
+            "patron_status": null
+          },
+          "id": "ae0666d1-f8f6-5302-530f-d866f783137e",
+          "relationships": {
+            "campaign": {
+              "data": {
+                "id": "4499214",
+                "type": "campaign"
+              },
+              "links": {
+                "related": "https://www.patreon.com/api/campaigns/4499214"
+              }
+            }
+          },
+          "type": "member"
+        },
+        {
+          "attributes": {
+            "is_free_member": false,
+            "is_free_trial": false,
+            "patron_status": "active_patron"
+          },
+          "id": "4f447af2-b638-ab6d-36d1-b80aa2fda460",
+          "relationships": {
+            "campaign": {
+              "data": {
+                "id": "72294889",
+                "type": "campaign"
+              },
+              "links": {
+                "related": "https://www.patreon.com/api/campaigns/72294889"
+              }
+            }
+          },
+          "type": "member"
+        },
+        {
+          "attributes": {
+            "is_free_member": true,
+            "is_free_trial": false,
+            "patron_status": null
+          },
+          "id": "903a729c-2aa4-ca9c-c5e6-d6988bddba28",
+          "relationships": {
+            "campaign": {
+              "data": {
+                "id": "82586331",
+                "type": "campaign"
+              },
+              "links": {
+                "related": "https://www.patreon.com/api/campaigns/82586331"
+              }
+            }
+          },
+          "type": "member"
+        },
+        {
+          "attributes": {
+            "is_free_member": true,
+            "is_free_trial": false,
+            "patron_status": null
+          },
+          "id": "08b774f0-8ba2-484b-1ce9-39304d126beb",
+          "relationships": {
+            "campaign": {
+              "data": {
+                "id": "87766736",
+                "type": "campaign"
+              },
+              "links": {
+                "related": "https://www.patreon.com/api/campaigns/87766736"
+              }
+            }
+          },
+          "type": "member"
+        },
+        {
+          "attributes": {
+            "is_free_member": true,
+            "is_free_trial": false,
+            "patron_status": null
+          },
+          "id": "4ba8fe6c-30e4-cb70-ce57-9deec5d4a35b",
+          "relationships": {
+            "campaign": {
+              "data": {
+                "id": "93072313",
+                "type": "campaign"
+              },
+              "links": {
+                "related": "https://www.patreon.com/api/campaigns/93072313"
+              }
+            }
+          },
+          "type": "member"
+        },
+        {
+          "attributes": {
+            "avatar_photo_image_urls": {
+              "default": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/5517324/e6979e1b522f631a46eee89878406fdf/weJ0Xzp3GsP1/1.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/5517324/e6979e1b522f631a46eee89878406fdf/rwPgDygsMJpihbR4BvSxaM%7O%3K/1.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/5517324/e6979e1b522f631a46eee89878406fdf/xeQlWarvKDxtimY4PbAplD%1S%2P/1.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/5517324/e6979e1b522f631a46eee89878406fdf/tiF6DqwgNHmryX%8J%8I/1.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/5517324/e6979e1b522f631a46eee89878406fdf/hyK1RsksHiD8/1.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "original": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/5517324/e6979e1b522f631a46eee89878406fdf/coFuPejpJDVhPebbJfHaInC6/1.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/5517324/e6979e1b522f631a46eee89878406fdf/kdWkMekwTuYuFlymHoU0IS4%9K/1.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/5517324/e6979e1b522f631a46eee89878406fdf/gvPsLrolLGyxSVN4MvbyDImpfM%8H%3H/1.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/5517324/e6979e1b522f631a46eee89878406fdf/vbEtGhezYGIeStrwObMbJH4%2H/1.png?token-hash=SYNTHETIC&token-time=1761868800"
+            },
+            "creation_name": "Cfsntdy sse vqpebi",
+            "is_nsfw": false,
+            "name": "Bxtukc Euizsp",
+            "url": "https://www.patreon.com/o31864474",
+            "vanity": "e79666011"
+          },
+          "id": "5517324",
+          "type": "campaign"
+        },
+        {
+          "attributes": {
+            "avatar_photo_image_urls": {
+              "default": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/93805243/dd4350fef883ea2d42fd5511364205e2/weJ0Xzp3GsP1/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/93805243/dd4350fef883ea2d42fd5511364205e2/rwPgDygsMJpihbR4BvSxaM%7O%3K/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/93805243/dd4350fef883ea2d42fd5511364205e2/xeQlWarvKDxtimY4PbAplD%1S%2P/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/93805243/dd4350fef883ea2d42fd5511364205e2/tiF6DqwgNHmryX%8J%8I/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/93805243/dd4350fef883ea2d42fd5511364205e2/hyK1RsksHiD8/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "original": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/93805243/dd4350fef883ea2d42fd5511364205e2/coFuPejpJDVhPebbJfHaInC6/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/93805243/dd4350fef883ea2d42fd5511364205e2/kdWkMekwTuYuFlymHoU0IS4%9K/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/93805243/dd4350fef883ea2d42fd5511364205e2/gvPsLrolLGyxSVN4MvbyDImpfM%8H%3H/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/93805243/dd4350fef883ea2d42fd5511364205e2/vbEtGhezYGIeStrwObMbJH4%2H/2.png?token-hash=SYNTHETIC&token-time=1761868800"
+            },
+            "creation_name": "dpbox 'p uceaf",
+            "is_nsfw": false,
+            "name": "Smob Jlaxird (SBM)",
+            "url": "https://www.patreon.com/ZlvoAorchxvSUV",
+            "vanity": "KpmqVejerdyLGU"
+          },
+          "id": "93805243",
+          "type": "campaign"
+        },
+        {
+          "attributes": {
+            "avatar_photo_image_urls": {
+              "default": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8825319/174931a6b48627feedcbe99f205d93ac/weJ0Xzp3GsP1/11.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8825319/174931a6b48627feedcbe99f205d93ac/rwPgDygsMJpihbR4BvSxaM%7O%3K/11.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8825319/174931a6b48627feedcbe99f205d93ac/xeQlWarvKDxtimY4PbAplD%1S%2P/11.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8825319/174931a6b48627feedcbe99f205d93ac/tiF6DqwgNHmryX%8J%8I/11.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8825319/174931a6b48627feedcbe99f205d93ac/hyK1RsksHiD8/11.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "original": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8825319/174931a6b48627feedcbe99f205d93ac/coFuPejpJDVhPebbJfHaInC6/11.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8825319/174931a6b48627feedcbe99f205d93ac/kdWkMekwTuYuFlymHoU0IS4%9K/11.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8825319/174931a6b48627feedcbe99f205d93ac/gvPsLrolLGyxSVN4MvbyDImpfM%8H%3H/11.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/8825319/174931a6b48627feedcbe99f205d93ac/vbEtGhezYGIeStrwObMbJH4%2H/11.png?token-hash=SYNTHETIC&token-time=1761868800"
+            },
+            "creation_name": "hahdmyxx Ahe Tamhf, Sbdocqvbrqt Kmyqzam, MquQYS",
+            "is_nsfw": false,
+            "name": "P. Lccnrp",
+            "url": "https://www.patreon.com/nlchjjo",
+            "vanity": "rougjjr"
+          },
+          "id": "8825319",
+          "type": "campaign"
+        },
+        {
+          "attributes": {
+            "avatar_photo_image_urls": {
+              "default": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/33745350/302bcf3014f6138ea07766cbd5aa2f8e/weJ0Xzp3GsP1/6.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/33745350/302bcf3014f6138ea07766cbd5aa2f8e/rwPgDygsMJpihbR4BvSxaM%7O%3K/6.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/33745350/302bcf3014f6138ea07766cbd5aa2f8e/xeQlWarvKDxtimY4PbAplD%1S%2P/6.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/33745350/302bcf3014f6138ea07766cbd5aa2f8e/tiF6DqwgNHmryX%8J%8I/6.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/33745350/302bcf3014f6138ea07766cbd5aa2f8e/hyK1RsksHiD8/6.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "original": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/33745350/302bcf3014f6138ea07766cbd5aa2f8e/coFuPejpJDVhPebbJfHaInC6/6.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/33745350/302bcf3014f6138ea07766cbd5aa2f8e/kdWkMekwTuYuFlymHoU0IS4%9K/6.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/33745350/302bcf3014f6138ea07766cbd5aa2f8e/gvPsLrolLGyxSVN4MvbyDImpfM%8H%3H/6.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/33745350/302bcf3014f6138ea07766cbd5aa2f8e/vbEtGhezYGIeStrwObMbJH4%2H/6.png?token-hash=SYNTHETIC&token-time=1761868800"
+            },
+            "creation_name": "Gxq Tsegtlj dmgoijsdr",
+            "is_nsfw": false,
+            "name": "UldpieDlxn",
+            "url": "https://www.patreon.com/AjdcihNgxr",
+            "vanity": "UldpieDlxn"
+          },
+          "id": "33745350",
+          "type": "campaign"
+        },
+        {
+          "attributes": {
+            "avatar_photo_image_urls": {
+              "default": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/1393523/513f93ee8bbef0f8df2d604893766485/weJ0Xzp3GsP1/12.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/1393523/513f93ee8bbef0f8df2d604893766485/rwPgDygsMJpihbR4BvSxaM%7O%3K/12.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/1393523/513f93ee8bbef0f8df2d604893766485/xeQlWarvKDxtimY4PbAplD%1S%2P/12.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/1393523/513f93ee8bbef0f8df2d604893766485/tiF6DqwgNHmryX%8J%8I/12.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/1393523/513f93ee8bbef0f8df2d604893766485/hyK1RsksHiD8/12.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "original": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/1393523/513f93ee8bbef0f8df2d604893766485/coFuPejpJDVhPebbJfHaInC6/12.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/1393523/513f93ee8bbef0f8df2d604893766485/kdWkMekwTuYuFlymHoU0IS4%9K/12.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/1393523/513f93ee8bbef0f8df2d604893766485/gvPsLrolLGyxSVN4MvbyDImpfM%8H%3H/12.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/1393523/513f93ee8bbef0f8df2d604893766485/vbEtGhezYGIeStrwObMbJH4%2H/12.jpg?token-hash=SYNTHETIC&token-time=1761868800"
+            },
+            "creation_name": "qmlercwh Rvs Fhttpi",
+            "is_nsfw": false,
+            "name": "Jpjfsmwkuu",
+            "url": "https://www.patreon.com/clsdxaxwhw",
+            "vanity": "tammetnfgq"
+          },
+          "id": "1393523",
+          "type": "campaign"
+        },
+        {
+          "attributes": {
+            "avatar_photo_image_urls": {
+              "default": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/3032429/919e8c4dbb6dd389e025410fb96da738/weJ0Xzp3GsP1/4.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/3032429/919e8c4dbb6dd389e025410fb96da738/rwPgDygsMJpihbR4BvSxaM%7O%3K/4.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/3032429/919e8c4dbb6dd389e025410fb96da738/xeQlWarvKDxtimY4PbAplD%1S%2P/4.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/3032429/919e8c4dbb6dd389e025410fb96da738/tiF6DqwgNHmryX%8J%8I/4.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/3032429/919e8c4dbb6dd389e025410fb96da738/hyK1RsksHiD8/4.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "original": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/3032429/919e8c4dbb6dd389e025410fb96da738/coFuPejpJDVhPebbJfHaInC6/4.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/3032429/919e8c4dbb6dd389e025410fb96da738/kdWkMekwTuYuFlymHoU0IS4%9K/4.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/3032429/919e8c4dbb6dd389e025410fb96da738/gvPsLrolLGyxSVN4MvbyDImpfM%8H%3H/4.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/3032429/919e8c4dbb6dd389e025410fb96da738/vbEtGhezYGIeStrwObMbJH4%2H/4.jpg?token-hash=SYNTHETIC&token-time=1761868800"
+            },
+            "creation_name": "eouppvnr ox valf-nb-cim ddehd acbcsl hrsuhnv npnfxjqk",
+            "is_nsfw": false,
+            "name": "Eysnez Fjdchi Ztqsoymq",
+            "url": "https://www.patreon.com/dirq",
+            "vanity": "zmek"
+          },
+          "id": "3032429",
+          "type": "campaign"
+        },
+        {
+          "attributes": {
+            "avatar_photo_image_urls": {
+              "default": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/6441314/f59663bd9bb842651375cbadfa14379f/weJ0Xzp3GsP1/4.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/6441314/f59663bd9bb842651375cbadfa14379f/rwPgDygsMJpihbR4BvSxaM%7O%3K/4.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/6441314/f59663bd9bb842651375cbadfa14379f/xeQlWarvKDxtimY4PbAplD%1S%2P/4.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/6441314/f59663bd9bb842651375cbadfa14379f/tiF6DqwgNHmryX%8J%8I/4.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/6441314/f59663bd9bb842651375cbadfa14379f/hyK1RsksHiD8/4.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "original": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/6441314/f59663bd9bb842651375cbadfa14379f/coFuPejpJDVhPebbJfHaInC6/4.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/6441314/f59663bd9bb842651375cbadfa14379f/kdWkMekwTuYuFlymHoU0IS4%9K/4.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/6441314/f59663bd9bb842651375cbadfa14379f/gvPsLrolLGyxSVN4MvbyDImpfM%8H%3H/4.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/6441314/f59663bd9bb842651375cbadfa14379f/vbEtGhezYGIeStrwObMbJH4%2H/4.png?token-hash=SYNTHETIC&token-time=1761868800"
+            },
+            "creation_name": "jismnwg Vif Zphxuu",
+            "is_nsfw": false,
+            "name": "Ohmt Qnrfge",
+            "url": "https://www.patreon.com/UznwFmjrpn",
+            "vanity": "ZecnTmgwdz"
+          },
+          "id": "6441314",
+          "type": "campaign"
+        },
+        {
+          "attributes": {
+            "avatar_photo_image_urls": {
+              "default": "https://c10.patreonusercontent.com/4/patreon-media/p/user/307991436/2400bd321c8d8e256b36ec3a971619f8/weJ0Xzp3GsP1/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred": "https://c10.patreonusercontent.com/4/patreon-media/p/user/307991436/2400bd321c8d8e256b36ec3a971619f8/rwPgDygsMJpihbR4BvSxaM%7O%3K/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred_small": "https://c10.patreonusercontent.com/4/patreon-media/p/user/307991436/2400bd321c8d8e256b36ec3a971619f8/xeQlWarvKDxtimY4PbAplD%1S%2P/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_large": "https://c10.patreonusercontent.com/4/patreon-media/p/user/307991436/2400bd321c8d8e256b36ec3a971619f8/tiF6DqwgNHmryX%8J%8I/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_small": "https://c10.patreonusercontent.com/4/patreon-media/p/user/307991436/2400bd321c8d8e256b36ec3a971619f8/hyK1RsksHiD8/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "original": "https://c10.patreonusercontent.com/4/patreon-media/p/user/307991436/2400bd321c8d8e256b36ec3a971619f8/coFuPejpJDVhPebbJfHaInC6/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail": "https://c10.patreonusercontent.com/4/patreon-media/p/user/307991436/2400bd321c8d8e256b36ec3a971619f8/kdWkMekwTuYuFlymHoU0IS4%9K/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_large": "https://c10.patreonusercontent.com/4/patreon-media/p/user/307991436/2400bd321c8d8e256b36ec3a971619f8/gvPsLrolLGyxSVN4MvbyDImpfM%8H%3H/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_small": "https://c10.patreonusercontent.com/4/patreon-media/p/user/307991436/2400bd321c8d8e256b36ec3a971619f8/vbEtGhezYGIeStrwObMbJH4%2H/2.png?token-hash=SYNTHETIC&token-time=1761868800"
+            },
+            "creation_name": "Pwktvoqy zp Bpmjocmkvpo",
+            "is_nsfw": false,
+            "name": "Pwktvoqy zp Bpmjocmkvpo",
+            "url": "https://www.patreon.com/SwpjofmghoQrufkmlkfpl",
+            "vanity": "ZpcknpvdfzDcnhoheagsu"
+          },
+          "id": "62255319",
+          "type": "campaign"
+        },
+        {
+          "attributes": {
+            "avatar_photo_image_urls": {
+              "default": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/4499214/33cc526c562ad3e3751ee89e007a71a5/weJ0Xzp3GsP1/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/4499214/33cc526c562ad3e3751ee89e007a71a5/rwPgDygsMJpihbR4BvSxaM%7O%3K/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/4499214/33cc526c562ad3e3751ee89e007a71a5/xeQlWarvKDxtimY4PbAplD%1S%2P/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/4499214/33cc526c562ad3e3751ee89e007a71a5/tiF6DqwgNHmryX%8J%8I/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/4499214/33cc526c562ad3e3751ee89e007a71a5/hyK1RsksHiD8/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "original": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/4499214/33cc526c562ad3e3751ee89e007a71a5/coFuPejpJDVhPebbJfHaInC6/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/4499214/33cc526c562ad3e3751ee89e007a71a5/kdWkMekwTuYuFlymHoU0IS4%9K/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/4499214/33cc526c562ad3e3751ee89e007a71a5/gvPsLrolLGyxSVN4MvbyDImpfM%8H%3H/1.jpg?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/4499214/33cc526c562ad3e3751ee89e007a71a5/vbEtGhezYGIeStrwObMbJH4%2H/1.jpg?token-hash=SYNTHETIC&token-time=1761868800"
+            },
+            "creation_name": "ivznhxrz bvt zxvaiys",
+            "is_nsfw": false,
+            "name": "Sp Nckjm",
+            "url": "https://www.patreon.com/jfvhaum069",
+            "vanity": "zspwjcn366"
+          },
+          "id": "4499214",
+          "type": "campaign"
+        },
+        {
+          "attributes": {
+            "avatar_photo_image_urls": {
+              "default": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/10b0e1919e8575c9dfecb2823c6bb60c/weJ0Xzp3GsP1/3.jpeg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/10b0e1919e8575c9dfecb2823c6bb60c/rwPgDygsMJpihbR4BvSxaM%7O%3K/3.jpeg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/10b0e1919e8575c9dfecb2823c6bb60c/xeQlWarvKDxtimY4PbAplD%1S%2P/3.jpeg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/10b0e1919e8575c9dfecb2823c6bb60c/tiF6DqwgNHmryX%8J%8I/3.jpeg?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/10b0e1919e8575c9dfecb2823c6bb60c/hyK1RsksHiD8/3.jpeg?token-hash=SYNTHETIC&token-time=1761868800",
+              "original": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/10b0e1919e8575c9dfecb2823c6bb60c/coFuPejpJDVhPebbJfHaInC6/3.jpeg?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/10b0e1919e8575c9dfecb2823c6bb60c/kdWkMekwTuYuFlymHoU0IS4%9K/3.jpeg?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/10b0e1919e8575c9dfecb2823c6bb60c/gvPsLrolLGyxSVN4MvbyDImpfM%8H%3H/3.jpeg?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/72294889/10b0e1919e8575c9dfecb2823c6bb60c/vbEtGhezYGIeStrwObMbJH4%2H/3.jpeg?token-hash=SYNTHETIC&token-time=1761868800"
+            },
+            "creation_name": "Hvrzoytc Aie Cfoszl (Gxo Yvtkr Tvwjli & Uznlep)",
+            "is_nsfw": false,
+            "name": "Boosko",
+            "url": "https://www.patreon.com/Unojun",
+            "vanity": "Boosko"
+          },
+          "id": "72294889",
+          "type": "campaign"
+        },
+        {
+          "attributes": {
+            "avatar_photo_image_urls": {
+              "default": "https://c10.patreonusercontent.com/4/patreon-media/p/user/758007654/ac4fa813c96574c71637a1859334014e/weJ0Xzp3GsP1/15.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred": "https://c10.patreonusercontent.com/4/patreon-media/p/user/758007654/ac4fa813c96574c71637a1859334014e/rwPgDygsMJpihbR4BvSxaM%7O%3K/15.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred_small": "https://c10.patreonusercontent.com/4/patreon-media/p/user/758007654/ac4fa813c96574c71637a1859334014e/xeQlWarvKDxtimY4PbAplD%1S%2P/15.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_large": "https://c10.patreonusercontent.com/4/patreon-media/p/user/758007654/ac4fa813c96574c71637a1859334014e/tiF6DqwgNHmryX%8J%8I/15.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_small": "https://c10.patreonusercontent.com/4/patreon-media/p/user/758007654/ac4fa813c96574c71637a1859334014e/hyK1RsksHiD8/15.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "original": "https://c10.patreonusercontent.com/4/patreon-media/p/user/758007654/ac4fa813c96574c71637a1859334014e/coFuPejpJDVhPebbJfHaInC6/15.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail": "https://c10.patreonusercontent.com/4/patreon-media/p/user/758007654/ac4fa813c96574c71637a1859334014e/kdWkMekwTuYuFlymHoU0IS4%9K/15.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_large": "https://c10.patreonusercontent.com/4/patreon-media/p/user/758007654/ac4fa813c96574c71637a1859334014e/gvPsLrolLGyxSVN4MvbyDImpfM%8H%3H/15.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_small": "https://c10.patreonusercontent.com/4/patreon-media/p/user/758007654/ac4fa813c96574c71637a1859334014e/vbEtGhezYGIeStrwObMbJH4%2H/15.png?token-hash=SYNTHETIC&token-time=1761868800"
+            },
+            "creation_name": "Hynhhkhj Wfrrlvpgnx: Mug Qhq Dlpi [Xmeru / Ssdowojoaja Nrqjbvi]",
+            "is_nsfw": false,
+            "name": "KlyEljtOqwa",
+            "url": "https://www.patreon.com/UgbYhspTaer",
+            "vanity": "KlyEljtOqwa"
+          },
+          "id": "82586331",
+          "type": "campaign"
+        },
+        {
+          "attributes": {
+            "avatar_photo_image_urls": {
+              "default": "https://c10.patreonusercontent.com/4/patreon-media/p/user/690988024/9bdb2893d304c16ab195e65c58119c5e/weJ0Xzp3GsP1/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred": "https://c10.patreonusercontent.com/4/patreon-media/p/user/690988024/9bdb2893d304c16ab195e65c58119c5e/rwPgDygsMJpihbR4BvSxaM%7O%3K/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred_small": "https://c10.patreonusercontent.com/4/patreon-media/p/user/690988024/9bdb2893d304c16ab195e65c58119c5e/xeQlWarvKDxtimY4PbAplD%1S%2P/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_large": "https://c10.patreonusercontent.com/4/patreon-media/p/user/690988024/9bdb2893d304c16ab195e65c58119c5e/tiF6DqwgNHmryX%8J%8I/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_small": "https://c10.patreonusercontent.com/4/patreon-media/p/user/690988024/9bdb2893d304c16ab195e65c58119c5e/hyK1RsksHiD8/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "original": "https://c10.patreonusercontent.com/4/patreon-media/p/user/690988024/9bdb2893d304c16ab195e65c58119c5e/coFuPejpJDVhPebbJfHaInC6/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail": "https://c10.patreonusercontent.com/4/patreon-media/p/user/690988024/9bdb2893d304c16ab195e65c58119c5e/kdWkMekwTuYuFlymHoU0IS4%9K/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_large": "https://c10.patreonusercontent.com/4/patreon-media/p/user/690988024/9bdb2893d304c16ab195e65c58119c5e/gvPsLrolLGyxSVN4MvbyDImpfM%8H%3H/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_small": "https://c10.patreonusercontent.com/4/patreon-media/p/user/690988024/9bdb2893d304c16ab195e65c58119c5e/vbEtGhezYGIeStrwObMbJH4%2H/2.png?token-hash=SYNTHETIC&token-time=1761868800"
+            },
+            "creation_name": "Kdpu Qeezvtm, Tcadk Otttcmt, Ovn Ledvbhn",
+            "is_nsfw": false,
+            "name": "K.T. Cxwjtx",
+            "url": "https://www.patreon.com/XKDbkexe",
+            "vanity": "LTMrpptf"
+          },
+          "id": "87766736",
+          "type": "campaign"
+        },
+        {
+          "attributes": {
+            "avatar_photo_image_urls": {
+              "default": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/93072313/5d7a7b156eaac0a0ec1ce52ff2cf2814/weJ0Xzp3GsP1/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/93072313/5d7a7b156eaac0a0ec1ce52ff2cf2814/rwPgDygsMJpihbR4BvSxaM%7O%3K/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_blurred_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/93072313/5d7a7b156eaac0a0ec1ce52ff2cf2814/xeQlWarvKDxtimY4PbAplD%1S%2P/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/93072313/5d7a7b156eaac0a0ec1ce52ff2cf2814/tiF6DqwgNHmryX%8J%8I/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "default_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/93072313/5d7a7b156eaac0a0ec1ce52ff2cf2814/hyK1RsksHiD8/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "original": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/93072313/5d7a7b156eaac0a0ec1ce52ff2cf2814/coFuPejpJDVhPebbJfHaInC6/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/93072313/5d7a7b156eaac0a0ec1ce52ff2cf2814/kdWkMekwTuYuFlymHoU0IS4%9K/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_large": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/93072313/5d7a7b156eaac0a0ec1ce52ff2cf2814/gvPsLrolLGyxSVN4MvbyDImpfM%8H%3H/2.png?token-hash=SYNTHETIC&token-time=1761868800",
+              "thumbnail_small": "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/93072313/5d7a7b156eaac0a0ec1ce52ff2cf2814/vbEtGhezYGIeStrwObMbJH4%2H/2.png?token-hash=SYNTHETIC&token-time=1761868800"
+            },
+            "creation_name": "Wyvfpo - Bfpkc Fqraa Meqtgstk  |  KebrsgljvDwdjkp | Jptac Bkztfr",
+            "is_nsfw": false,
+            "name": "DwdlrpqclyNfsdnnsn",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn",
+            "vanity": "DwdlrpqclyNfsdnnsn"
+          },
+          "id": "93072313",
+          "type": "campaign"
+        }
+      ],
+      "links": {
+        "self": "https://www.patreon.com/api/user/623230988"
+      }
+    },
+    "headers": {
+      "content-type": "application/vnd.api+json"
+    },
+    "status": 200
+  },
+  "routeKey": {
+    "params": {},
+    "path": "/api/current_user"
+  }
+}

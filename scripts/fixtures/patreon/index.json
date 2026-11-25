@@ -1,0 +1,472 @@
+[
+  {
+    "description": "GET /api/campaigns/72294889; status 200; data: 1 campaign; included: user 1; next cursor: no",
+    "file": "campaigns-id-ecc6ff36.json",
+    "routeKey": {
+      "params": {},
+      "path": "/api/campaigns/72294889"
+    }
+  },
+  {
+    "description": "GET /api/collection; status 200; data: 6 resource(s); next cursor: no",
+    "file": "collection-8a71e6d8.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "1393523",
+        "sort": "-edited_at"
+      },
+      "path": "/api/collection"
+    }
+  },
+  {
+    "description": "GET /api/collection; status 200; data: 0 resource(s); next cursor: no",
+    "file": "collection-9d53f1c6.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "3032429",
+        "sort": "-edited_at"
+      },
+      "path": "/api/collection"
+    }
+  },
+  {
+    "description": "GET /api/collection; status 200; data: 0 resource(s); next cursor: no",
+    "file": "collection-0d6b0ad3.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "33745350",
+        "sort": "-edited_at"
+      },
+      "path": "/api/collection"
+    }
+  },
+  {
+    "description": "GET /api/collection; status 200; data: 2 resource(s); next cursor: no",
+    "file": "collection-7984d247.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "4499214",
+        "sort": "-edited_at"
+      },
+      "path": "/api/collection"
+    }
+  },
+  {
+    "description": "GET /api/collection; status 200; data: 0 resource(s); next cursor: no",
+    "file": "collection-f2702503.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "5517324",
+        "sort": "-edited_at"
+      },
+      "path": "/api/collection"
+    }
+  },
+  {
+    "description": "GET /api/collection; status 200; data: 7 resource(s); next cursor: no",
+    "file": "collection-926f10cf.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "62255319",
+        "sort": "-edited_at"
+      },
+      "path": "/api/collection"
+    }
+  },
+  {
+    "description": "GET /api/collection; status 200; data: 12 resource(s); next cursor: no",
+    "file": "collection-903354e6.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "6441314",
+        "sort": "-edited_at"
+      },
+      "path": "/api/collection"
+    }
+  },
+  {
+    "description": "GET /api/collection; status 200; data: 4 resource(s); next cursor: no",
+    "file": "collection-a28d5956.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "72294889",
+        "sort": "-edited_at"
+      },
+      "path": "/api/collection"
+    }
+  },
+  {
+    "description": "GET /api/collection; status 200; data: 2 resource(s); next cursor: no",
+    "file": "collection-a72b66e1.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "82586331",
+        "sort": "-edited_at"
+      },
+      "path": "/api/collection"
+    }
+  },
+  {
+    "description": "GET /api/collection; status 200; data: 2 resource(s); next cursor: no",
+    "file": "collection-ba5a6ef0.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "87766736",
+        "sort": "-edited_at"
+      },
+      "path": "/api/collection"
+    }
+  },
+  {
+    "description": "GET /api/collection; status 200; data: 1 resource(s); next cursor: no",
+    "file": "collection-321efeec.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "8825319",
+        "sort": "-edited_at"
+      },
+      "path": "/api/collection"
+    }
+  },
+  {
+    "description": "GET /api/collection; status 200; data: 7 resource(s); next cursor: no",
+    "file": "collection-ef4b6e93.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "93072313",
+        "sort": "-edited_at"
+      },
+      "path": "/api/collection"
+    }
+  },
+  {
+    "description": "GET /api/collection; status 200; data: 0 resource(s); next cursor: no",
+    "file": "collection-b629f3c7.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "93805243",
+        "sort": "-edited_at"
+      },
+      "path": "/api/collection"
+    }
+  },
+  {
+    "description": "GET /api/collection/5898598; status 200; data: 1 collection; included: campaign 1; next cursor: no",
+    "file": "collection-id-2c67ef56.json",
+    "routeKey": {
+      "params": {},
+      "path": "/api/collection/5898598"
+    }
+  },
+  {
+    "description": "GET /api/current_user; status 200; data: 1 user; included: campaign 13, member 13; next cursor: no",
+    "file": "current_user-4c72e5ca.json",
+    "routeKey": {
+      "params": {},
+      "path": "/api/current_user"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 50 resource(s); next cursor: yes",
+    "file": "posts-123ac370.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "1393523",
+        "sort": "-published_at"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 35 resource(s); next cursor: no",
+    "file": "posts-ebbb977e.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "3032429",
+        "sort": "-published_at"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 50 resource(s); next cursor: yes",
+    "file": "posts-d203d4cf.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "33745350",
+        "sort": "-published_at"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 50 resource(s); next cursor: yes",
+    "file": "posts-b95759c6.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "4499214",
+        "sort": "-published_at"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 50 resource(s); next cursor: yes",
+    "file": "posts-4c17c33e.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "5517324",
+        "sort": "-published_at"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 50 resource(s); next cursor: yes",
+    "file": "posts-08945672.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "62255319",
+        "sort": "-published_at"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 50 resource(s); next cursor: yes",
+    "file": "posts-18cfc108.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "6441314",
+        "sort": "-published_at"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 50 resource(s); next cursor: yes",
+    "file": "posts-fc56f301.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "72294889",
+        "filter[collection_id]": "5898598",
+        "sort": "collection_order"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 54 resource(s); next cursor: no",
+    "file": "posts-8ee4cb85.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "72294889",
+        "filter[collection_id]": "5898598",
+        "sort": "published_at"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 44 resource(s); next cursor: no",
+    "file": "posts-a4a5e9cf.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "72294889",
+        "page[cursor]": "synthcursor-09129dc0bb5a14a1e340e6feaedbbc84",
+        "sort": "published_at"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 44 resource(s); next cursor: no",
+    "file": "posts-c4052296.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "72294889",
+        "page[cursor]": "synthcursor-6942e0e855c27314a8acc31ce7c248ad",
+        "sort": "published_at"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 44 resource(s); next cursor: no",
+    "file": "posts-c0803f41.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "72294889",
+        "page[cursor]": "synthcursor-8dcdb667de3c6bdcf5c8f6d976f35c31",
+        "sort": "published_at"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 100 resource(s); next cursor: yes",
+    "file": "posts-cca9097b.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "72294889",
+        "page[cursor]": "synthcursor-b5969f61dd4cf87935a7a175d50a91e7",
+        "sort": "published_at"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 100 resource(s); next cursor: yes",
+    "file": "posts-168e7e05.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "72294889",
+        "page[cursor]": "synthcursor-b95862849fd498b066f1a97f656a268f",
+        "sort": "published_at"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 100 resource(s); next cursor: yes",
+    "file": "posts-a822144b.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "72294889",
+        "page[cursor]": "synthcursor-c2882d00b18bcfe80038312ef561f745",
+        "sort": "published_at"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 100 resource(s); next cursor: yes",
+    "file": "posts-ec77b40a.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "72294889",
+        "sort": "published_at"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 50 resource(s); next cursor: yes",
+    "file": "posts-f42fec5d.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "82586331",
+        "sort": "-published_at"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 50 resource(s); next cursor: yes",
+    "file": "posts-5adcdf3c.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "87766736",
+        "sort": "-published_at"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 50 resource(s); next cursor: yes",
+    "file": "posts-63dfebb5.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "8825319",
+        "sort": "-published_at"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 50 resource(s); next cursor: yes",
+    "file": "posts-d9d73e8a.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "93072313",
+        "sort": "-published_at"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts; status 200; data: 50 resource(s); next cursor: yes",
+    "file": "posts-26146280.json",
+    "routeKey": {
+      "params": {
+        "filter[campaign_id]": "93805243",
+        "sort": "-published_at"
+      },
+      "path": "/api/posts"
+    }
+  },
+  {
+    "description": "GET /api/posts/314518217; status 200; data: 1 post; next cursor: no",
+    "file": "posts-id-a1bbed25.json",
+    "routeKey": {
+      "params": {},
+      "path": "/api/posts/314518217"
+    }
+  },
+  {
+    "description": "GET /api/posts/366282242; status 200; data: 1 post; next cursor: no",
+    "file": "posts-id-3d8e60b5.json",
+    "routeKey": {
+      "params": {},
+      "path": "/api/posts/366282242"
+    }
+  },
+  {
+    "description": "GET /api/posts/493664916; status 200; data: 1 post; next cursor: no",
+    "file": "posts-id-2d51cf03.json",
+    "routeKey": {
+      "params": {},
+      "path": "/api/posts/493664916"
+    }
+  },
+  {
+    "description": "GET /api/posts/75536882; status 200; data: 1 post; included: media 1; next cursor: no",
+    "file": "posts-id-80252fc1.json",
+    "routeKey": {
+      "params": {},
+      "path": "/api/posts/75536882"
+    }
+  },
+  {
+    "description": "GET /api/search_feed/v1/campaign; status 200; data: 24 resource(s); included: campaign 24, launcher-card-campaign 24; next cursor: yes",
+    "file": "search_feed-v1-campaign-dffc58d8.json",
+    "routeKey": {
+      "params": {
+        "filter[query]": "litrpg",
+        "page[cursor]": "synthcursor-3963eed4372a153cb9ca6a85d5f1765b"
+      },
+      "path": "/api/search_feed/v1/campaign"
+    }
+  },
+  {
+    "description": "GET /api/search_feed/v1/campaign; status 200; data: 24 resource(s); included: campaign 24, launcher-card-campaign 24; next cursor: yes",
+    "file": "search_feed-v1-campaign-db29373d.json",
+    "routeKey": {
+      "params": {
+        "filter[query]": "litrpg",
+        "page[cursor]": "synthcursor-fe05e75e757521ea12050003422b6795"
+      },
+      "path": "/api/search_feed/v1/campaign"
+    }
+  },
+  {
+    "description": "GET /api/search_feed/v1/campaign; status 200; data: 24 resource(s); included: campaign 24, launcher-card-campaign 24; next cursor: yes",
+    "file": "search_feed-v1-campaign-458bd344.json",
+    "routeKey": {
+      "params": {
+        "filter[query]": "litrpg"
+      },
+      "path": "/api/search_feed/v1/campaign"
+    }
+  }
+]

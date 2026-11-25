@@ -1,0 +1,640 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "https://www.patreon.com/api/posts?filter%5Bcampaign_id%5D=93072313&filter%5Bcontains_exclusive_posts%5D=true&filter%5Bis_draft%5D=false&sort=-published_at&page%5Bsize%5D=50&include=attachments_media&fields%5Bpost%5D=title,published_at,url,post_type,current_user_can_view,min_cents_pledged_to_view,post_file&fields%5Bmedia%5D=file_name,mimetype,size_bytes&json-api-version=1.0&json-api-use-default-includes=false&json-api-use-default-fields=false"
+  },
+  "response": {
+    "body": {
+      "data": [
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-30T09:41:53.000+00:00",
+            "title": "Lovtpjedc Kcimxf - Pklxpfl ZI.GZJ (0.36)",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/kldcunxad-smlqmc-750604208"
+          },
+          "id": "750604208",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-30T09:25:32.000+00:00",
+            "title": "[Pbkzw Onshyy] Vtbwtua 9.88",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/fcnll-kfjkcg-3-238706072"
+          },
+          "id": "238706072",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-20T05:55:44.000+00:00",
+            "title": "[Ltorn Auelil] - Lbuccvb 7.83 - Tdcy",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/fcnll-kfjkcg-3-941900003"
+          },
+          "id": "941900003",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-18T14:57:38.000+00:00",
+            "title": "Qpokv Uxcvz Ovtvviji E - Sgqdgxlf - Vvow",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/rskut-ufosx-s-861911472"
+          },
+          "id": "861911472",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-16T14:57:44.000+00:00",
+            "title": "Ynisj Cgjag Upjhxort - Cqwfjlj I.PQCZUX (6.92) - Bivrljynx",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/yoffp-kmjmm-y-7-555270160"
+          },
+          "id": "555270160",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-14T05:02:14.000+00:00",
+            "title": "Mszli Rjevj Qtydoted - Kyrfjth M.FNIJQ (6.03) - Lgivw Cvidex Vzhli",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/yoffp-kmjmm-y-7-181745460"
+          },
+          "id": "181745460",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-11T15:45:05.000+00:00",
+            "title": "Bbpmnoxuw Rbgfmd - Jzfwyfp LP.FWTLT (1.91)",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/kldcunxad-smlqmc-732323102"
+          },
+          "id": "732323102",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-11T02:52:48.000+00:00",
+            "title": "Euzmlwq H.QUQS (0.72) - Gzanjsxplx Donscbcdndafu Niam",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/uxharjd-l-ljwh-5-927726724"
+          },
+          "id": "927726724",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-09T00:08:40.000+00:00",
+            "title": "Niman Dszrs Vkcaobei - Ebtbmkz V.NBQJS (3.00) - Pzszaxvl",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/yoffp-kmjmm-y-7-116035764"
+          },
+          "id": "116035764",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-07T09:29:16.000+00:00",
+            "title": "Dnlqh Xmqlc Zzgvjfjf - Vrfebde C.PLLVQRJ (4.92) - Lgj Vieox",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/yoffp-kmjmm-y-7-498603516"
+          },
+          "id": "498603516",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-06T14:33:59.000+00:00",
+            "title": "Pgsof Mbjte Fgeymmod - Smidgvp X.HQTDZF (3.48) - Vgedpxe Cdurmqtc Sxlqpktdfvve",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/yoffp-kmjmm-y-7-908598514"
+          },
+          "id": "908598514",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-02T15:28:33.000+00:00",
+            "title": "Nklfrte G.KTGIX (2.67) - Vewoud Xygqcd",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/czkxdlp-n-czgpt-365082224"
+          },
+          "id": "365082224",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-09-01T02:40:29.000+00:00",
+            "title": "Lltmi Ymlew Celssgps - Nldmqqb S.RAJB (1.86) - Coxcccklh Czos",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/yoffp-kmjmm-y-7-223962444"
+          },
+          "id": "223962444",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-29T06:53:56.000+00:00",
+            "title": "Xdbyy Nxjul Twrdjevl - Sczanbk C.EROSQ (6.63) Nsp Oxkd-Bvuitc",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/yoffp-kmjmm-y-7-484519246"
+          },
+          "id": "484519246",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-27T17:35:41.000+00:00",
+            "title": "Gbzfv Sgsek Acmbuomh - Aggeojz A.HVZNVE (2.30) - Muqdsmj Fwcppf",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/yoffp-kmjmm-y-7-582968480"
+          },
+          "id": "582968480",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-27T06:54:12.000+00:00",
+            "title": "Lvxjqfvln Jucdqv - Xedhkwc SO.RAMN (5.17)",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/kldcunxad-smlqmc-953739445"
+          },
+          "id": "953739445",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": true,
+            "min_cents_pledged_to_view": 0,
+            "post_file": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-26T06:06:54.000+00:00",
+            "title": "Jjhnfrj Xgwmq - Wonez Rbdmq",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/nchqjxx-utftf-760497407"
+          },
+          "id": "760497407",
+          "relationships": {
+            "attachments_media": {
+              "data": []
+            }
+          },
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-24T09:50:43.000+00:00",
+            "title": "[Zbver Rzsxdq] Kosxpoj 5.72",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/fcnll-kfjkcg-3-693368554"
+          },
+          "id": "693368554",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-23T09:39:58.000+00:00",
+            "title": "Bunaw Enxbu Cxcaidhz - Zdytdat R.IUOWA (1.89) - Dhiadkii Guecgj",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/yoffp-kmjmm-y-7-977891648"
+          },
+          "id": "977891648",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-20T13:41:25.000+00:00",
+            "title": "Ceaek Ndypr Evtypcft - Zxpqhea N.ASRZ (2.19) - Vgokfdd Emxtnlybew",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/yoffp-kmjmm-y-7-284930822"
+          },
+          "id": "284930822",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-20T13:38:43.000+00:00",
+            "title": "[Coymt Qiidgm] Ijbrzii 7.35",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/fcnll-kfjkcg-3-231216153"
+          },
+          "id": "231216153",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-19T15:13:54.000+00:00",
+            "title": "Oqcuwdkmf Cxumex - Rgmhvdx ZL.OPP (4.79)",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/kldcunxad-smlqmc-413020100"
+          },
+          "id": "413020100",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-18T15:59:55.000+00:00",
+            "title": "Zjify Zniou Zunhifhg O - Rlixcho U.QJK (2.16) - Ndmxbmuvqj Mvoh",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/zjvyh-lccyd-h-r-966569446"
+          },
+          "id": "966569446",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-17T09:26:43.000+00:00",
+            "title": "[Veywo Zyuyix] Xvysxxe 3.57",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/fcnll-kfjkcg-3-361913145"
+          },
+          "id": "361913145",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-15T14:59:57.000+00:00",
+            "title": "Wrpkx Rvpjm Tpendjyw - Sxjoaei A.GJXQ (6.09) - Ljksn",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/yoffp-kmjmm-y-7-513891937"
+          },
+          "id": "513891937",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-14T14:58:39.000+00:00",
+            "title": "[Mfmgn Iwxtuu] Epsdmqy 2.7",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/ixned-nqkplp-5-3-906587227"
+          },
+          "id": "906587227",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-13T14:51:58.000+00:00",
+            "title": "Wglpd Jfbzt Mdpfrihx W - Qzhprarzt V - Cgyo",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/zjvyh-lccyd-h-r-842177155"
+          },
+          "id": "842177155",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-12T09:40:10.000+00:00",
+            "title": "Fkfmvngqo Txqsyh - Ovmfuzw RX.OG (4.55)",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/kldcunxad-smlqmc-893219216"
+          },
+          "id": "893219216",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-11T17:00:09.000+00:00",
+            "title": "[Ghtnm Ayyogk] Ewzniin 6.2",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/nkfbn-izqntw-5-1-973400950"
+          },
+          "id": "973400950",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-08T17:00:24.000+00:00",
+            "title": "[Fmvpk Xjnzxp] - Zowkqwe 6.9",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/sgssm-twfaor-8-1-164515270"
+          },
+          "id": "164515270",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-08T02:16:12.000+00:00",
+            "title": "Ngfeq Rozcp Ofvpwurp - Hkcsipn R.ZSSEBF (9.82) - Kdqzd, Pvylcy, Cebbqckiwkcs ",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/yoffp-kmjmm-y-7-870737491"
+          },
+          "id": "870737491",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-06T14:34:02.000+00:00",
+            "title": "[Sfari Bwmsqg] Euyiobh 2.3",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/sluhq-gouqpd-3-6-336232921"
+          },
+          "id": "336232921",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-05T14:04:24.000+00:00",
+            "title": "Pnrbjyzpn Mnkeib - Swcxmhp YQ.HGO (5.23)",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/kldcunxad-smlqmc-315819993"
+          },
+          "id": "315819993",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-04T16:06:58.000+00:00",
+            "title": "Qgktr Ynqub Sdoamlne - Wefnrrd A.PGXJF (8.71) - Uks Nmaigqg Yjcx",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/yoffp-kmjmm-y-7-324547179"
+          },
+          "id": "324547179",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-03T03:41:09.000+00:00",
+            "title": "[Ktptb Ubfxss] - Vhccbjm 6.2",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/twvvu-ajbvkb-4-4-404052092"
+          },
+          "id": "404052092",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-08-01T15:06:34.000+00:00",
+            "title": "Alxtj Ylxeu Gbbrjatp - Tdlsxin R.EJIA (7.72) - Rggqxmvmaebj ",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/yoffp-kmjmm-y-7-150578853"
+          },
+          "id": "150578853",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-31T17:00:13.000+00:00",
+            "title": "[Vvqxi Uwqrfg] Iqexcye 5.0",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/bkhwo-fekkfn-3-0-595304682"
+          },
+          "id": "595304682",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-30T09:10:25.000+00:00",
+            "title": "Ytduk Vrrqi Ckivmwxg - Bkbqlel P.TNQ (5.81) - Csudhaw Lsrpf Swc",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/yoffp-kmjmm-y-7-751396608"
+          },
+          "id": "751396608",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-29T17:00:12.000+00:00",
+            "title": "[Vzxgm Learwe] - Bgcsmgd 4.7",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/tmdrp-sikmdz-8-7-214081781"
+          },
+          "id": "214081781",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-28T08:16:41.000+00:00",
+            "title": "Jyxssljpy Kqrvwc - Kdlrvbk KI.PKVH (0.83)",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/kldcunxad-smlqmc-342951101"
+          },
+          "id": "342951101",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-27T16:45:21.000+00:00",
+            "title": "Czlct Hhnav Spbzdefz - Qugmvkz U.EHZW (6.59) - Rjtlkw Biwafsykc",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/yoffp-kmjmm-y-7-510925094"
+          },
+          "id": "510925094",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-27T04:22:44.000+00:00",
+            "title": "[Sxzui Gzmtua] Gduhnpg 6.5",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/abmxw-ahnwdc-1-3-152890855"
+          },
+          "id": "152890855",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-25T06:16:25.000+00:00",
+            "title": "Bfalq Wysgt Nmmaixtp - Qphgubosj EO - Ftv",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/elder-dwqsl-mh-335799770"
+          },
+          "id": "335799770",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-24T12:51:39.000+00:00",
+            "title": "[Tsxkh Iysytp] - Rpvqcjg 4.9",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/zbvcg-wqhnqq-9-9-106678136"
+          },
+          "id": "106678136",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-23T08:50:19.000+00:00",
+            "title": "Qkium Edghb Jrvcpztt - Gzsuzou O.RMBDP (3.04) - Ywhache",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/yoffp-kmjmm-y-7-730874527"
+          },
+          "id": "730874527",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-21T04:30:31.000+00:00",
+            "title": "[Evsto Fmmcgg] - Yqem 1 Hdpiiiqm",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/tfqbf-ykhbvq-2-818329992"
+          },
+          "id": "818329992",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-21T04:05:20.000+00:00",
+            "title": "Bmyxsyrsn Ssavqe - Fdifxrb HA.DOG (1.45)",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/kldcunxad-smlqmc-389656944"
+          },
+          "id": "389656944",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-19T16:19:50.000+00:00",
+            "title": "Cymev Ojbug Fplkkdwo - Hcvdoss D.PLDJ (6.14) - Hgvcgj tz xig Nbyjl Ldvapvp",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/yoffp-kmjmm-y-7-917132751"
+          },
+          "id": "917132751",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-18T17:00:11.000+00:00",
+            "title": "[Bqveg Yrnclj] - Jkqslep 01 - Lxmefvth",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/jtzzk-yeiunz-97-604154710"
+          },
+          "id": "604154710",
+          "type": "post"
+        },
+        {
+          "attributes": {
+            "current_user_can_view": false,
+            "min_cents_pledged_to_view": null,
+            "post_type": "text_only",
+            "published_at": "2025-07-17T10:23:56.000+00:00",
+            "title": "Iwetx Ppzmd Qzjgmasu - Angalau C.PSB (3.06) - Oghfvvy Sxucukhwofff",
+            "url": "https://www.patreon.com/AsaqocfaqkDvmhxskn/posts/yoffp-kmjmm-y-7-935534581"
+          },
+          "id": "935534581",
+          "type": "post"
+        }
+      ],
+      "links": {
+        "next": "https://www.patreon.com/api/posts?filter%5Bcampaign_id%5D=93072313&filter%5Bcontains_exclusive_posts%5D=true&filter%5Bis_draft%5D=false&sort=-published_at&page%5Bsize%5D=50&include=attachments_media&fields%5Bpost%5D=title,published_at,url,post_type,current_user_can_view,min_cents_pledged_to_view,post_file&fields%5Bmedia%5D=file_name,mimetype,size_bytes&json-api-version=1.0&json-api-use-default-includes=false&json-api-use-default-fields=false&page%5Bcursor%5D=synthcursor-7c3b8b260e3e98cf7d552f2e0ba331ec"
+      },
+      "meta": {
+        "pagination": {
+          "cursors": {
+            "next": "synthcursor-7c3b8b260e3e98cf7d552f2e0ba331ec"
+          },
+          "total": 314
+        }
+      }
+    },
+    "headers": {
+      "content-type": "application/vnd.api+json"
+    },
+    "status": 200
+  },
+  "routeKey": {
+    "params": {
+      "filter[campaign_id]": "93072313",
+      "sort": "-published_at"
+    },
+    "path": "/api/posts"
+  }
+}
