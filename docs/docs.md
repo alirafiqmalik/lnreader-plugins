@@ -9,6 +9,7 @@
   - [Filters](#filters)
   - [PluginSettings](#pluginsettings)
   - [NovelStatus](#novelstatus)
+  - [PluginError](#pluginerror)
   - [Pagination](#pagination)
   - [Using Cheerio](#using-cheerio)
   - [Custom fetching functions](#custom-fetching-functions)
@@ -83,6 +84,7 @@ class ExamplePlugin implements Plugin.PluginBase {}
 | [parseNovel(path)](#pluginbaseparsenovel)                      | yes      | Novel info and chapter list getter                             |
 | [parseChapter(path)](#pluginbaseparsechapter)                  | yes      | Chapter text getter                                            |
 | [searchNovels(searchTerm, page)](#pluginbasesearchnovels)      | yes      | Novel searching getter                                         |
+| [getFilterSuggestions(filterKey, query)](#pluginbasegetfiltersuggestions) | no | Suggestion source for filters flagged `autocomplete` |
 | [resolveUrl(path, isNovel)](#pluginbaseresolveurl)             | no       | Helper that turns a novel/chapter path into a full URL          |
 | [parsePage(novelPath, page)](#pagination)                      | no       | Chapter-list-by-page getter, for novels too large to list in one `parseNovel` call — see [Pagination](#pagination) |
 
@@ -451,6 +453,60 @@ class ExamplePlugin implements Plugin.PluginBase {
 }
 ```
 
+#### PluginBase::getFilterSuggestions
+
+Optional method that powers autocomplete for filters flagged with `autocomplete: true`. The app
+calls it with the filter's key and the text typed so far, then shows the returned options under the
+filter field.
+
+```ts
+getFilterSuggestions?(
+  filterKey: string,
+  query: string,
+): Promise<FilterOption[]>;
+```
+
+`FilterOption` is the same `{ label, value }` shape used by [Picker](#picker-options) and
+[CheckboxGroup](#checkboxgroup-options) options.
+
+###### Parameters
+
+- `filterKey` key of the filter in the [Filter definition](#filter-definition-object) object
+- `query` text typed into the filter
+
+###### Returns
+
+`FilterOption[]` matching suggestions. Return an empty array when nothing matches. If the method is
+missing, throws, or times out, the field degrades to plain free text.
+
+###### Example
+
+```ts
+class ExamplePlugin implements Plugin.PluginBase {
+  ...
+  filters = {
+    author: {
+      type: FilterTypes.TextInput,
+      label: 'Author',
+      value: '',
+      autocomplete: true,
+    },
+  } satisfies Filters;
+
+  async getFilterSuggestions(
+    filterKey: string,
+    query: string,
+  ): Promise<FilterOption[]> {
+    if (filterKey !== 'author') return [];
+    const res = await fetchApi(
+      `${this.site}/authors?q=${encodeURIComponent(query)}`,
+    );
+    const authors = (await res.json()) as { name: string }[];
+    return authors.map(author => ({ label: author.name, value: author.name }));
+  }
+}
+```
+
 #### PluginBase::resolveUrl
 
 Optional helper that turns a novel or chapter `path` into a full, requestable URL. It isn't
@@ -576,6 +632,7 @@ options.filters.order;
 | type    | `FilterTypes`                | yes           | type of the filter                                                 |
 | value   | [check types](#filter-types) | yes           | Default value for this filter and the starting filter state in-app |
 | options | [check types](#filter-types) | in some types | The options available in the given type                            |
+| autocomplete | `boolean`                | no            | For `TextInput` and `MultiText`: request suggestions from [`getFilterSuggestions`](#pluginbasegetfiltersuggestions) while typing |
 
 ###### Example
 
@@ -602,9 +659,33 @@ serialize each filter's `type` (e.g. `FilterTypes.CheckboxGroup === 'Checkbox'`)
 | -------------------------- | -------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------- | ----------------------------------------------- |
 | `Picker`                  | `'Picker'`     | A spinner for choosing one of the choices provided in `options`    | `string` the picked value                                                    | [Picker](#picker-options) options               |
 | `TextInput`               | `'Text'`       | A filter allowing a free text input                                | `string` written value                                                       | N/A                                             |
+| `MultiText`               | `'MultiText'`  | Editable list of free text values, shown as chips (e.g. several tags) | `string[]` the committed values                                            | N/A                                             |
 | `Switch`                  | `'Switch'`     | A boolean switch                                                   | `boolean` state of the switch                                                | N/A                                             |
 | `CheckboxGroup`           | `'Checkbox'`   | A grouping of checkboxes                                           | `string[]` array containing selected values                                  | [CheckboxGroup](#checkboxgroup-options) options |
 | `ExcludableCheckboxGroup` | `'XCheckbox'`  | A grouping of checkboxes where each one can be marked as included or excluded (e.g. "must have this genre" vs. "must not have this genre") | [ExcludableCheckboxGroupValue](#excludablecheckboxgroupvalue-object) object | [CheckboxGroup](#checkboxgroup-options) options |
+
+`TextInput` and `MultiText` also accept `autocomplete: true` to show suggestions from
+[`getFilterSuggestions`](#pluginbasegetfiltersuggestions) while the user types. The flag is a
+capability of those filter types, not a separate `FilterTypes` member, and leaving it out keeps the
+field as plain free text.
+
+`MultiText` carries a `string[]` exactly like `CheckboxGroup`, but the values are whatever the user
+typed. The plugin owns the wire format, so join them with commas, repeat a query parameter, or
+otherwise serialize them however the site expects:
+
+```ts
+filters = {
+  tags: {
+    type: FilterTypes.MultiText,
+    label: 'Tags',
+    value: [],
+    autocomplete: true,
+  },
+} satisfies Filters;
+
+// inside popularNovels
+const tags = filters.tags.value; // string[]
+```
 
 ###### Picker options
 
@@ -866,6 +947,57 @@ import { NovelStatus } from '@libs/novelStatus';
 `status` is typed as `NovelStatus`, not a free-form string — always assign one of the members
 above (there's no fallback for other strings; pick `Unknown` if the source's status doesn't map
 onto any of them).
+
+---
+
+### PluginError
+
+`@libs/pluginError` standardizes error codes and HTTP status propagation so the LNReader app,
+Playground UI, and live-check CI can distinguish site blocks/rate limits from broken selectors.
+
+```ts
+import {
+  PluginError,
+  checkResponse,
+  createPluginError,
+  httpError,
+  assertNoChallenge,
+} from '@libs/pluginError';
+```
+
+| Member             | Value / Purpose                                                   |
+| ------------------ | ----------------------------------------------------------------- |
+| `Captcha`          | `'Captcha error, please open in webview'` (anti-bot challenge)    |
+| `Cloudflare`       | `'Cloudflare is blocking requests. Try again later.'` (`403`/`503`) |
+| `RateLimited`      | `'Too many requests (429). Please try again later.'` (`429`)      |
+| `NotFound`         | Generic `404` missing content                                     |
+| `NovelNotFound`    | `404` novel missing from source                                   |
+| `ChapterNotFound`  | `404` chapter missing from source                                 |
+| `AuthRequired`     | `'Authentication required. Please log in via WebView.'` (`401`)   |
+| `EmptyContent`     | `'No readable content was found.'` (parsed body/container empty)  |
+| `InvalidResponse`  | `'Invalid response from source.'` (malformed JSON/HTML payload)   |
+| `NetworkError`     | `'Could not reach site, please try to open in webview.'`          |
+
+- **`checkResponse(res, options?)`**: Checks `res.ok` and throws `httpError(res.status)` (or
+  `createPluginError(options.notFoundCode, { status: 404 })` when `404` and `notFoundCode` is set).
+  Pass `{ search: true }` when a search endpoint returns `404` for empty results (only `404` is
+  skipped; other non-OK statuses still throw).
+- **`assertNoChallenge(html, requestUrl?, responseUrl?)`**: Throws `PluginError.Captcha` with
+  `status: 403` when challenge titles (`Just a moment...`, `Bot Verification`, Cloudflare) or
+  off-domain redirects are detected.
+- **`createPluginError(code, { status?, message?, url? })`**: Creates an `Error` instance with
+  `.code` and optional `.status`/`.url` properties attached.
+
+```ts
+const res = checkResponse(await fetchApi(url), {
+  notFoundCode: PluginError.ChapterNotFound,
+});
+const html = await res.text();
+assertNoChallenge(html, url, res.url);
+if (!content.length) {
+  throw createPluginError(PluginError.EmptyContent);
+}
+```
 
 ---
 
@@ -1154,6 +1286,7 @@ is what's actually injected into a running plugin's `require(...)` calls — any
 | `@libs/isAbsoluteUrl` | `isUrlAbsolute`                             | See below                                                          |
 | `@libs/filterInputs`  | `FilterTypes`, `Filters`, ...               | See [Filters](#filters)                                            |
 | `@libs/novelStatus`   | `NovelStatus`                               | See [NovelStatus](#novelstatus)                                    |
+| `@libs/pluginError`   | `PluginError`, `checkResponse`, `createPluginError`, `httpError`, `isChallengeHtml`, `assertNoChallenge`, `isPluginError` | Standardized plugin errors — see [PluginError](#pluginerror) |
 | `@libs/aes`           | `gcm`                                       | See [AES decryption](#aes-decryption) below                        |
 | `@libs/utils`         | `utf8ToBytes`, `bytesToUtf8`                | See [AES decryption](#aes-decryption) below                        |
 
