@@ -2,3 +2,4 @@
 # One branch per line. Edit with .github/fork/branch.sh activate|retire.
 # The publish workflow retires a branch after upstream merges its PR.
 feat/new-plugin-support-for-patreon
+fix/patreon-session-recovery
