@@ -26,9 +26,10 @@ const LOCK_PREFIX = '🔒 ';
 // The tag in square brackets is stable, so tests and users can match it.
 const ERRORS = {
   LOGIN_REQUIRED:
-    '[patreon:LOGIN_REQUIRED] You are not logged in to Patreon. Open this source, tap the globe icon to open the WebView, log in to Patreon, then go back.',
-  LOCKED:
-    '[patreon:LOCKED] This post is locked. Your membership tier is too low for it.',
+    '[patreon:LOGIN_REQUIRED] Sign in to Patreon to resume reading. Open the Patreon source, tap the globe icon, and sign in with your Patreon email and password. Then return and retry.',
+  LOCKED: '[patreon:LOCKED] This post is locked. Check your access on Patreon.',
+  INVALID_SESSION_RESPONSE:
+    '[patreon:INVALID_SESSION_RESPONSE] Could not confirm your Patreon sign-in. Try again.',
   RATE_LIMITED:
     '[patreon:RATE_LIMITED] Patreon is limiting requests. Wait a few minutes and try again.',
   BLOCKED:
@@ -357,7 +358,15 @@ function parseMemberships(doc: JsonApiDoc): Membership[] {
   return paid.concat(free);
 }
 
-// R1: also the "am I logged in?" check, because a 401 maps to LOGIN_REQUIRED.
+// R8: the identity check needs only the default resource type and ID.
+async function requireSession(): Promise<void> {
+  const { data } = await api('current_user', []);
+  if (!data || Array.isArray(data) || data.type !== 'user' || !str(data.id)) {
+    throw fail('INVALID_SESSION_RESPONSE');
+  }
+}
+
+// R1
 async function loadMemberships(): Promise<Membership[]> {
   const doc = await api('current_user', [
     ['include-tree', 'active_memberships{campaign}'],
@@ -773,7 +782,7 @@ class PatreonPlugin implements Plugin.PluginBase {
   name = 'patreon[dev]';
   icon = 'src/multi/patreondev/icon.png';
   site = SITE;
-  version = '1.0.0';
+  version = '1.0.1';
 
   filters = {
     show: {
@@ -900,6 +909,7 @@ class PatreonPlugin implements Plugin.PluginBase {
     const posts = (await listPosts(kind.chapterQuery(id, meta))).filter(post =>
       profile.isChapter(post),
     );
+    if (posts.some(post => !post.canView)) await requireSession();
     // Numbers come from the full list, so they stay the same when hideLocked
     // changes (the app keeps chapters it saved before).
     const chapters = posts.map((post, index) => ({
@@ -934,17 +944,7 @@ class PatreonPlugin implements Plugin.PluginBase {
       ]),
     );
     if (!post.canView) {
-      // Logged out and "tier too low" look the same here. R1 tells them apart;
-      // any other R1 failure must not hide LOCKED.
-      try {
-        await loadMemberships();
-      } catch (error) {
-        if (
-          String((error as Error).message).indexOf(ERRORS.LOGIN_REQUIRED) === 0
-        ) {
-          throw error;
-        }
-      }
+      await requireSession();
       throw fail('LOCKED');
     }
     return renderPost(post, profileFor(post.campaignId || ''));

@@ -454,10 +454,11 @@ const withLocks = ids => world => {
 
 test('parseNovel prefixes locked posts with the lock sign', async () => {
   const ids = {};
-  const { plugin } = h.boot({ setup: withLocks(ids) });
+  const { plugin, world } = h.boot({ setup: withLocks(ids) });
   const novel = await plugin.parseNovel('campaign/' + PAID);
   assert.equal(ids.out.length, LOCKED_AT.length);
   assert.equal(novel.chapters.length, 244);
+  assert.equal(world.to('/api/current_user').length, 1);
   campaign.forEach((post, i) => {
     const expected = LOCKED_AT.includes(i)
       ? LOCK + post.attributes.title
@@ -502,6 +503,24 @@ test('parseNovel hideLocked removes locked posts (boolean and string form)', asy
   assert.equal(
     (await plugin.parseNovel('campaign/' + PAID)).chapters.length,
     244,
+  );
+});
+
+test('parseNovel asks for sign-in when a guest response would hide paid chapters', async () => {
+  const { plugin } = h.boot({
+    loggedOut: true,
+    stored: { hideLocked: true },
+    setup: world => {
+      lockCampaignPosts(
+        world,
+        h.table,
+        campaign.map((_, index) => index),
+      );
+    },
+  });
+  await assert.rejects(
+    plugin.parseNovel('campaign/' + PAID),
+    tag('LOGIN_REQUIRED'),
   );
 });
 
@@ -674,15 +693,23 @@ test('parseChapter locked post: LOCKED when logged in, LOGIN_REQUIRED when logge
   );
 });
 
-test('parseChapter locked post stays LOCKED when the R1 check itself is rate limited', async () => {
+test('parseChapter reports a rate-limited session check', async () => {
   const { plugin, world } = h.boot({
     setup: r1Failure(429, { errors: [] }),
   });
   await assert.rejects(
     plugin.parseChapter('posts/' + r7.locked.id),
-    tag('LOCKED'),
+    tag('RATE_LIMITED'),
   );
   assert.equal(world.to('/api/current_user').length, 1);
+});
+
+test('parseChapter reports an identity response without a user', async () => {
+  const { plugin } = h.boot({ setup: r1Failure(200, { data: null }) });
+  await assert.rejects(
+    plugin.parseChapter('posts/' + r7.locked.id),
+    tag('INVALID_SESSION_RESPONSE'),
+  );
 });
 
 test('parseChapter attachment post: image media becomes an img, body links stay', async () => {
@@ -1227,6 +1254,12 @@ const CONTRACT = {
       'fields[media]': 'file_name,download_url,mimetype,image_urls',
     },
   },
+  R8: {
+    path: /^\/api\/current_user$/,
+    required: [],
+    fixed: {},
+    fields: {},
+  },
 };
 
 const sameSet = (actual, expected) =>
@@ -1237,8 +1270,10 @@ function checkContract(requests) {
   const seen = new Set();
   for (const req of requests) {
     assert.ok(req.url.startsWith('https://www.patreon.com/api/'), req.url);
-    const id = Object.keys(CONTRACT).find(key =>
-      CONTRACT[key].path.test(req.path),
+    const id = Object.keys(CONTRACT).find(
+      key =>
+        CONTRACT[key].path.test(req.path) &&
+        CONTRACT[key].required.every(name => req.names.includes(name)),
     );
     assert.ok(id, 'no request kind for ' + req.path);
     seen.add(id);
@@ -1285,7 +1320,7 @@ function checkContract(requests) {
   return seen;
 }
 
-test('request contract: each method sends the R1-R7 requests of Part 1', async () => {
+test('request contract: each method sends the R1-R8 requests of Part 1', async () => {
   // Drives every method itself, so the test does not depend on the other tests.
   const { plugin, world } = h.boot();
   await plugin.popularNovels(1, popularOptions('all')); // R1, R2
@@ -1294,6 +1329,10 @@ test('request contract: each method sends the R1-R7 requests of Part 1', async (
   await plugin.parseNovel('campaign/' + PAID); // R4, R6 (cursor on page 2)
   await plugin.parseNovel('collection/' + COLLECTION); // R5, R6 with a collection
   await plugin.parseChapter('posts/' + r7.paid.id); // R7
+  await assert.rejects(
+    plugin.parseChapter('posts/' + r7.locked.id),
+    tag('LOCKED'),
+  ); // R8
   assert.deepEqual([...checkContract(world.requests)].sort(), [
     'R1',
     'R2',
@@ -1302,6 +1341,7 @@ test('request contract: each method sends the R1-R7 requests of Part 1', async (
     'R5',
     'R6',
     'R7',
+    'R8',
   ]);
   // The other tests only add requests of the same shapes (errors, retries, hand-made posts).
   checkContract(h.allRequests);
